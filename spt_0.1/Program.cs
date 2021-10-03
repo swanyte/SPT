@@ -16,7 +16,7 @@ namespace spt_0._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new Loading());
         }
     }
 }
