@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace spt_0._1.Forms
 {
     public partial class FormCheck : Form
-    {
+    {       
+
         public FormCheck()
         {
             InitializeComponent();
@@ -24,7 +26,17 @@ namespace spt_0._1.Forms
 
 
 
-        private void open_button_Click(object sender, EventArgs e)
+        private void FormCheck_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void check_password_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             String file_path = null;
@@ -35,16 +47,6 @@ namespace spt_0._1.Forms
                 file_path = openFileDialog1.FileName;
                 textBox1.Text = file_path;
             }
-        }
-
-        private void FormCheck_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void check_password_button_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -34,8 +34,8 @@ namespace spt_0._1.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.openButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -75,7 +75,7 @@ namespace spt_0._1.Forms
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(404, 18);
+            this.richTextBox1.Size = new System.Drawing.Size(344, 18);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -90,25 +90,6 @@ namespace spt_0._1.Forms
             this.label3.Text = "Select File";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 24;
-            this.iconButton1.Location = new System.Drawing.Point(397, 90);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(65, 30);
-            this.iconButton1.TabIndex = 8;
-            this.iconButton1.Text = "Open";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
             // iconButton2
             // 
             this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
@@ -120,13 +101,33 @@ namespace spt_0._1.Forms
             this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 24;
-            this.iconButton2.Location = new System.Drawing.Point(397, 260);
+            this.iconButton2.Location = new System.Drawing.Point(397, 222);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(160, 30);
             this.iconButton2.TabIndex = 9;
             this.iconButton2.Text = "Check the Password";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // openButton
+            // 
+            this.openButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
+            this.openButton.FlatAppearance.BorderSize = 0;
+            this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.openButton.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.openButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openButton.IconSize = 24;
+            this.openButton.Location = new System.Drawing.Point(397, 90);
+            this.openButton.Name = "openButton";
+            this.openButton.Size = new System.Drawing.Size(65, 30);
+            this.openButton.TabIndex = 8;
+            this.openButton.Text = "Open";
+            this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openButton.UseVisualStyleBackColor = false;
+            this.openButton.Click += new System.EventHandler(this.openButton_Click);
             // 
             // FormCheck
             // 
@@ -135,7 +136,7 @@ namespace spt_0._1.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(578, 318);
             this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.openButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
@@ -155,7 +156,7 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton openButton;
         private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

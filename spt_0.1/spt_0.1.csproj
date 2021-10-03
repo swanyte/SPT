@@ -94,6 +94,9 @@
     <Compile Include="Forms\MessageExit.Designer.cs">
       <DependentUpon>MessageExit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RJControls\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +157,9 @@
     <Folder Include="MessageForms\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\folder1.png" />
+    <None Include="Resources\open_folder.png" />
     <Content Include="SPT_Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
