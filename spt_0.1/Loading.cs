@@ -40,10 +40,10 @@ namespace spt_0._1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            ProgressBar.Value += 1;
+            ProgressBar.Value += 3;
             ProgressBar.Text = ProgressBar.Value.ToString() + "%";
 
-            if (ProgressBar.Value == 100)
+            if (ProgressBar.Value == 30)
             {
                 timer1.Enabled = false;
                 MainForm main_form = new MainForm();

@@ -24,7 +24,7 @@ namespace spt_0._1.Forms
 
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void open_button_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             String file_path = null;
@@ -38,6 +38,11 @@ namespace spt_0._1.Forms
         }
 
         private void FormCheck_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void check_password_button_Click(object sender, EventArgs e)
         {
 
         }

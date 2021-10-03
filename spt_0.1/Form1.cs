@@ -39,10 +39,10 @@ namespace spt_0._1
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
+            public static Color color1 = Color.FromArgb(163, 147, 235);
+            public static Color color2 = Color.FromArgb(245, 199, 247);
+            public static Color color3 = Color.FromArgb(252, 133, 174);
+            public static Color color4 = Color.FromArgb(253, 138, 114);
         }
 
         //Methods
@@ -78,9 +78,9 @@ namespace spt_0._1
             if (currentBtn != null)
             {
                 currentBtn.BackColor = Color.FromArgb(39, 41, 109);
-                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.ForeColor = Color.FromArgb(231, 234, 246);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.IconColor = Color.FromArgb(231, 234, 246);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -167,7 +167,7 @@ namespace spt_0._1
             DisableButton();
             leftBorderBtn.Visible = false;
             IconCurrentChildForm.IconChar = IconChar.Home;
-            IconCurrentChildForm.IconColor = Color.MediumPurple;
+            IconCurrentChildForm.IconColor = Color.FromArgb(231, 234, 246);
             lblTitleChildForm.Text = "Home";
         }
         //Drag Form - allow to move form

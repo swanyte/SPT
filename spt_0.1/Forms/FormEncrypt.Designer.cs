@@ -47,16 +47,18 @@ namespace spt_0._1.Forms
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 86);
+            this.textBox1.Location = new System.Drawing.Point(74, 69);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(439, 25);
+            this.textBox1.Size = new System.Drawing.Size(385, 21);
             this.textBox1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(529, 86);
+            this.button1.Location = new System.Drawing.Point(463, 69);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 25);
+            this.button1.Size = new System.Drawing.Size(75, 20);
             this.button1.TabIndex = 1;
             this.button1.Text = "찾기";
             this.button1.UseVisualStyleBackColor = true;
@@ -65,9 +67,10 @@ namespace spt_0._1.Forms
             // btn_encrypt
             // 
             this.btn_encrypt.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_encrypt.Location = new System.Drawing.Point(420, 211);
+            this.btn_encrypt.Location = new System.Drawing.Point(368, 169);
+            this.btn_encrypt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_encrypt.Name = "btn_encrypt";
-            this.btn_encrypt.Size = new System.Drawing.Size(103, 46);
+            this.btn_encrypt.Size = new System.Drawing.Size(90, 37);
             this.btn_encrypt.TabIndex = 2;
             this.btn_encrypt.Text = "암호화";
             this.btn_encrypt.UseVisualStyleBackColor = true;
@@ -75,24 +78,24 @@ namespace spt_0._1.Forms
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(84, 136);
+            this.checkBox1.Location = new System.Drawing.Point(74, 109);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(129, 19);
+            this.checkBox1.Size = new System.Drawing.Size(104, 16);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "현재 암호 여부";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // FormEncrypt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(709, 411);
+            this.ClientSize = new System.Drawing.Size(578, 318);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btn_encrypt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormEncrypt";
             this.Text = "FormEncrypt";
             this.Load += new System.EventHandler(this.FormEncrypt_Load);
