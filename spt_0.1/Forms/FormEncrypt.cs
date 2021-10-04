@@ -32,7 +32,9 @@ namespace spt_0._1.Forms
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void openButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             String file_path = null;

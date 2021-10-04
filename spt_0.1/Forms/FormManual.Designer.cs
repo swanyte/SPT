@@ -90,8 +90,8 @@ namespace spt_0._1.Forms
             this.ClientSize = new System.Drawing.Size(578, 318);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.SystemColors.Control;
-            this.Name = "FormManual";
-            this.Text = "FormManual";
+            //this.Name = "FormManual";
+            //this.Text = "FormManual";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
