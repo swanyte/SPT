@@ -952,3 +952,4 @@ E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0.1.csproj.CopyComplete
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0.1.exe
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0.1.pdb
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.FormManual.resources
+E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.FormTabManual.resources

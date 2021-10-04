@@ -132,7 +132,7 @@ namespace spt_0._1
         private void ManualButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Forms.FormManual());
+            OpenChildForm(new Forms.FormTabManual());
         }
 
         private void EncrtpyButton_Click(object sender, EventArgs e)
