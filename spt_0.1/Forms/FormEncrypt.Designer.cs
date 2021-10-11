@@ -31,11 +31,11 @@ namespace spt_0._1.Forms
         {
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.openButton = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.encryptButton = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.encryptButton = new FontAwesome.Sharp.IconButton();
+            this.openButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -64,29 +64,9 @@ namespace spt_0._1.Forms
             this.checkBox1.Text = "encrypted file";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // openButton
-            // 
-            this.openButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(199)))), ((int)(((byte)(247)))));
-            this.openButton.FlatAppearance.BorderSize = 0;
-            this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.openButton.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
-            this.openButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.openButton.IconSize = 24;
-            this.openButton.Location = new System.Drawing.Point(397, 90);
-            this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(65, 30);
-            this.openButton.TabIndex = 9;
-            this.openButton.Text = "Open";
-            this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.openButton.UseVisualStyleBackColor = false;
-            this.openButton.Click += new System.EventHandler(this.openButton_Click);
-            // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(39, 97);
@@ -99,13 +79,24 @@ namespace spt_0._1.Forms
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
             this.label3.Location = new System.Drawing.Point(8, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 28);
             this.label3.TabIndex = 11;
             this.label3.Text = "Select File";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.label1.Location = new System.Drawing.Point(8, 167);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 28);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Encrypt File";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // encryptButton
             // 
@@ -126,22 +117,31 @@ namespace spt_0._1.Forms
             this.encryptButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.encryptButton.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // openButton
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.label1.Location = new System.Drawing.Point(8, 167);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 28);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Encrypt File";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.openButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(199)))), ((int)(((byte)(247)))));
+            this.openButton.FlatAppearance.BorderSize = 0;
+            this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.openButton.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.openButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openButton.IconSize = 24;
+            this.openButton.Location = new System.Drawing.Point(397, 90);
+            this.openButton.Name = "openButton";
+            this.openButton.Size = new System.Drawing.Size(65, 30);
+            this.openButton.TabIndex = 9;
+            this.openButton.Text = "Open";
+            this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openButton.UseVisualStyleBackColor = false;
+            this.openButton.Click += new System.EventHandler(this.openButton_Click);
             // 
             // FormEncrypt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(578, 318);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.encryptButton);

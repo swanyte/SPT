@@ -166,9 +166,10 @@
     <Folder Include="MessageForms\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\folder.png" />
-    <None Include="Resources\folder1.png" />
-    <None Include="Resources\open_folder.png" />
+    <None Include="Resources\main_logo.png" />
+    <None Include="Resources\활용형subUI%28silver%29.jpg" />
+    <None Include="Resources\symbol.jpg" />
+    <None Include="Resources\symbol1.jpg" />
     <Content Include="SPT_Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

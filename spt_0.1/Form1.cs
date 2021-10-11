@@ -39,10 +39,10 @@ namespace spt_0._1
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(163, 147, 235);
-            public static Color color2 = Color.FromArgb(245, 199, 247);
-            public static Color color3 = Color.FromArgb(252, 133, 174);
-            public static Color color4 = Color.FromArgb(253, 138, 114);
+            public static Color color1 = Color.FromArgb(180, 151, 89);
+            public static Color color2 = Color.FromArgb(243, 219,218);
+            public static Color color3 = Color.FromArgb(0, 26, 114);
+            public static Color color4 = Color.FromArgb(255, 184, 28);
         }
 
         //Methods
@@ -53,7 +53,7 @@ namespace spt_0._1
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(91, 134, 173);
+                currentBtn.BackColor = Color.FromArgb(197, 112, 114);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -77,10 +77,10 @@ namespace spt_0._1
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(39, 41, 109);
-                currentBtn.ForeColor = Color.FromArgb(231, 234, 246);
+                currentBtn.BackColor = Color.FromArgb(197, 112, 114);
+                currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.FromArgb(231, 234, 246);
+                currentBtn.IconColor = Color.White;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -167,7 +167,7 @@ namespace spt_0._1
             DisableButton();
             leftBorderBtn.Visible = false;
             IconCurrentChildForm.IconChar = IconChar.Home;
-            IconCurrentChildForm.IconColor = Color.FromArgb(231, 234, 246);
+            IconCurrentChildForm.IconColor = Color.White;
             lblTitleChildForm.Text = "Home";
         }
         //Drag Form - allow to move form

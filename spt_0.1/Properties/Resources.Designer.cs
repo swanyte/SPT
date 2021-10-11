@@ -63,9 +63,9 @@ namespace spt_0._1.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap open_folder {
+        internal static System.Drawing.Bitmap main_logo {
             get {
-                object obj = ResourceManager.GetObject("open_folder", resourceCulture);
+                object obj = ResourceManager.GetObject("main_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +76,36 @@ namespace spt_0._1.Properties {
         internal static System.Drawing.Bitmap SPT_Logo {
             get {
                 object obj = ResourceManager.GetObject("SPT_Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap symbol {
+            get {
+                object obj = ResourceManager.GetObject("symbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap symbol1 {
+            get {
+                object obj = ResourceManager.GetObject("symbol1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 활용형subUI_silver_ {
+            get {
+                object obj = ResourceManager.GetObject("활용형subUI(silver)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

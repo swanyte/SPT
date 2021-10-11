@@ -32,9 +32,9 @@ namespace spt_0._1.Forms
             menws.Add(btnSetting);
 
             menw_colors = new List<Color>();
-            menw_colors.Add(Color.FromArgb(245, 199, 247));
-            menw_colors.Add(Color.FromArgb(252, 133, 174));
-            menw_colors.Add(Color.FromArgb(253, 138, 114));
+            menw_colors.Add(Color.FromArgb(157, 34, 53));
+            menw_colors.Add(Color.FromArgb(0, 26, 114));
+            menw_colors.Add(Color.FromArgb(255, 184, 28));
 
             //시작 TabPage 설정
             tabMain.SelectedIndex = 0;
@@ -43,7 +43,7 @@ namespace spt_0._1.Forms
         {
             if (tabMain.SelectedIndex != index)
             {
-                menws[tabMain.SelectedIndex].ForeColor = Color.FromArgb(231, 234, 246);
+                menws[tabMain.SelectedIndex].ForeColor = Color.White;
                 menws[index].ForeColor = menw_colors[index];
                 selectBarPanel.BackColor = menw_colors[index];
                 selectBarPanel.Location = new Point(menws[index].Location.X, 0);
