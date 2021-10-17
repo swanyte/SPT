@@ -134,13 +134,14 @@ namespace spt_0._1.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(578, 318);
+            this.ClientSize = new System.Drawing.Size(628, 336);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCheck";
             this.Text = "FormCheck";
             this.Load += new System.EventHandler(this.FormCheck_Load);

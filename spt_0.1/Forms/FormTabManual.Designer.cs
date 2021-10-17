@@ -29,6 +29,7 @@ namespace spt_0._1.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabManual));
             this.tabBack = new System.Windows.Forms.Panel();
             this.tabMenuSelectBack = new System.Windows.Forms.Panel();
             this.selectBarPanel = new System.Windows.Forms.Panel();
@@ -39,15 +40,20 @@ namespace spt_0._1.Forms
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.axWindowsMediaPlayer3 = new AxWMPLib.AxWindowsMediaPlayer();
             this.tabBack.SuspendLayout();
             this.tabMenuSelectBack.SuspendLayout();
             this.menuPanel.SuspendLayout();
             this.tabMain.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabBack
@@ -61,7 +67,7 @@ namespace spt_0._1.Forms
             this.tabBack.Controls.Add(this.tabMain);
             this.tabBack.Location = new System.Drawing.Point(12, 12);
             this.tabBack.Name = "tabBack";
-            this.tabBack.Size = new System.Drawing.Size(554, 294);
+            this.tabBack.Size = new System.Drawing.Size(604, 312);
             this.tabBack.TabIndex = 0;
             // 
             // tabMenuSelectBack
@@ -71,7 +77,7 @@ namespace spt_0._1.Forms
             this.tabMenuSelectBack.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabMenuSelectBack.Location = new System.Drawing.Point(0, 40);
             this.tabMenuSelectBack.Name = "tabMenuSelectBack";
-            this.tabMenuSelectBack.Size = new System.Drawing.Size(554, 3);
+            this.tabMenuSelectBack.Size = new System.Drawing.Size(604, 3);
             this.tabMenuSelectBack.TabIndex = 1;
             // 
             // selectBarPanel
@@ -91,7 +97,7 @@ namespace spt_0._1.Forms
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(554, 40);
+            this.menuPanel.Size = new System.Drawing.Size(604, 40);
             this.menuPanel.TabIndex = 0;
             // 
             // btnSetting
@@ -138,68 +144,79 @@ namespace spt_0._1.Forms
             this.tabMain.Controls.Add(this.tabPage1);
             this.tabMain.Controls.Add(this.tabPage2);
             this.tabMain.Controls.Add(this.tabPage3);
-            this.tabMain.Location = new System.Drawing.Point(-2, 18);
+            this.tabMain.Location = new System.Drawing.Point(-4, 18);
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(560, 278);
+            this.tabMain.Size = new System.Drawing.Size(612, 296);
             this.tabMain.TabIndex = 2;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(219)))), ((int)(((byte)(218)))));
+            this.tabPage1.Controls.Add(this.axWindowsMediaPlayer1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(552, 252);
+            this.tabPage1.Size = new System.Drawing.Size(604, 270);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(212)))), ((int)(((byte)(231)))));
-            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.axWindowsMediaPlayer2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(552, 252);
+            this.tabPage2.Size = new System.Drawing.Size(604, 270);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(254, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "page2";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(220)))));
-            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.axWindowsMediaPlayer3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(552, 252);
+            this.tabPage3.Size = new System.Drawing.Size(604, 270);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
-            // label3
+            // axWindowsMediaPlayer1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(254, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 12);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "page3";
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(6, 9);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(442, 237);
+            this.axWindowsMediaPlayer1.TabIndex = 0;
+            // 
+            // axWindowsMediaPlayer2
+            // 
+            this.axWindowsMediaPlayer2.Enabled = true;
+            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(8, 9);
+            this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
+            this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
+            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(442, 237);
+            this.axWindowsMediaPlayer2.TabIndex = 1;
+            // 
+            // axWindowsMediaPlayer3
+            // 
+            this.axWindowsMediaPlayer3.Enabled = true;
+            this.axWindowsMediaPlayer3.Location = new System.Drawing.Point(8, 9);
+            this.axWindowsMediaPlayer3.Name = "axWindowsMediaPlayer3";
+            this.axWindowsMediaPlayer3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer3.OcxState")));
+            this.axWindowsMediaPlayer3.Size = new System.Drawing.Size(442, 237);
+            this.axWindowsMediaPlayer3.TabIndex = 1;
             // 
             // FormTabManual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(578, 318);
+            this.ClientSize = new System.Drawing.Size(628, 336);
             this.Controls.Add(this.tabBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTabManual";
             this.Text = "FormTabManual";
             this.Load += new System.EventHandler(this.TabTest_Load);
@@ -207,10 +224,12 @@ namespace spt_0._1.Forms
             this.tabMenuSelectBack.ResumeLayout(false);
             this.menuPanel.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,7 +247,8 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label btnSetting;
         private System.Windows.Forms.Label btnCheck;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer2;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer3;
     }
 }
