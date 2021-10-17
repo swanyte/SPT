@@ -32,9 +32,9 @@ namespace spt_0._1.Forms
             menws.Add(btnSetting);
 
             menw_colors = new List<Color>();
-            menw_colors.Add(Color.FromArgb(157, 34, 53));
-            menw_colors.Add(Color.FromArgb(0, 26, 114));
-            menw_colors.Add(Color.FromArgb(255, 184, 28));
+            menw_colors.Add(Color.FromArgb(230, 183, 182));
+            menw_colors.Add(Color.FromArgb(179, 171, 207));
+            menw_colors.Add(Color.FromArgb(255, 231, 186));
 
             //시작 TabPage 설정
             tabMain.SelectedIndex = 0;

@@ -36,13 +36,14 @@ namespace spt_0._1
         }
 
 
+
         //Structs
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(180, 151, 89);
-            public static Color color2 = Color.FromArgb(243, 219,218);
-            public static Color color3 = Color.FromArgb(0, 26, 114);
-            public static Color color4 = Color.FromArgb(255, 184, 28);
+            public static Color color2 = Color.FromArgb(230, 183, 182);
+            public static Color color3 = Color.FromArgb(179, 171, 207);
+            public static Color color4 = Color.FromArgb(255, 231, 186);
         }
 
         //Methods
@@ -116,6 +117,8 @@ namespace spt_0._1
             messageExit.ShowDialog();
         }
 
+        /*
+         * maximize 삭제
         private void MaximizeButton_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
@@ -123,6 +126,7 @@ namespace spt_0._1
             else
                 WindowState = FormWindowState.Normal;
         }
+        */
 
 		private void MinimizeButton_Click(object sender, EventArgs e)
 		{
@@ -170,6 +174,8 @@ namespace spt_0._1
             IconCurrentChildForm.IconColor = Color.White;
             lblTitleChildForm.Text = "Home";
         }
+
+        /*
         //Drag Form - allow to move form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -187,6 +193,15 @@ namespace spt_0._1
 
         }
 
+        
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        /*
         //Overridden methods
         protected override void WndProc(ref Message m)
         {
@@ -196,6 +211,24 @@ namespace spt_0._1
                 return;
             }
             base.WndProc(ref m);
+        }
+        */
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private const int SYSTEMCOMMAND = 0x112;
+        private const int SC_DRAGMOVE = 0xF012;
+
+
+
+
+        private void TextBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, SYSTEMCOMMAND, SC_DRAGMOVE, 0);
         }
     }
 }

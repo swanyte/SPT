@@ -30,29 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.LeftMenu = new System.Windows.Forms.Panel();
-            this.LogoBox = new System.Windows.Forms.Panel();
-            this.TextBar = new System.Windows.Forms.Panel();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.welcome = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.MinimizeButton = new FontAwesome.Sharp.IconButton();
-            this.MaximizeButton = new FontAwesome.Sharp.IconButton();
-            this.ExitButton = new FontAwesome.Sharp.IconButton();
             this.SetButton = new FontAwesome.Sharp.IconButton();
             this.CheckButton = new FontAwesome.Sharp.IconButton();
             this.EncrtpyButton = new FontAwesome.Sharp.IconButton();
             this.ManualButton = new FontAwesome.Sharp.IconButton();
+            this.LogoBox = new System.Windows.Forms.Panel();
             this.MainLogo = new System.Windows.Forms.PictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.welcome = new System.Windows.Forms.Label();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.ExitButton = new FontAwesome.Sharp.IconButton();
+            this.MinimizeButton = new FontAwesome.Sharp.IconButton();
+            this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TextBar = new System.Windows.Forms.Panel();
             this.LeftMenu.SuspendLayout();
             this.LogoBox.SuspendLayout();
-            this.TextBar.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TextBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // LeftMenu
@@ -69,155 +68,6 @@
             this.LeftMenu.Name = "LeftMenu";
             this.LeftMenu.Size = new System.Drawing.Size(176, 441);
             this.LeftMenu.TabIndex = 0;
-            // 
-            // LogoBox
-            // 
-            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.LogoBox.Controls.Add(this.MainLogo);
-            this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LogoBox.Location = new System.Drawing.Point(0, 0);
-            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
-            this.LogoBox.Name = "LogoBox";
-            this.LogoBox.Size = new System.Drawing.Size(176, 105);
-            this.LogoBox.TabIndex = 1;
-            // 
-            // TextBar
-            // 
-            this.TextBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.TextBar.Controls.Add(this.pictureBox1);
-            this.TextBar.Controls.Add(this.lblTitleChildForm);
-            this.TextBar.Controls.Add(this.IconCurrentChildForm);
-            this.TextBar.Controls.Add(this.MinimizeButton);
-            this.TextBar.Controls.Add(this.MaximizeButton);
-            this.TextBar.Controls.Add(this.ExitButton);
-            this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TextBar.Location = new System.Drawing.Point(176, 0);
-            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBar.Name = "TextBar";
-            this.TextBar.Size = new System.Drawing.Size(628, 96);
-            this.TextBar.TabIndex = 1;
-            this.TextBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseDown);
-            // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(49, 72);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 18);
-            this.lblTitleChildForm.TabIndex = 4;
-            this.lblTitleChildForm.Text = "Home";
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(176, 96);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(628, 9);
-            this.panelShadow.TabIndex = 2;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Controls.Add(this.welcome);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelDesktop.Location = new System.Drawing.Point(176, 105);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(628, 336);
-            this.panelDesktop.TabIndex = 3;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // welcome
-            // 
-            this.welcome.AutoSize = true;
-            this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.welcome.Location = new System.Drawing.Point(38, 33);
-            this.welcome.Name = "welcome";
-            this.welcome.Size = new System.Drawing.Size(284, 37);
-            this.welcome.TabIndex = 0;
-            this.welcome.Text = "Welcome to SPT!!!";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::spt_0._1.Properties.Resources.symbol1;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // IconCurrentChildForm
-            // 
-            this.IconCurrentChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.IconCurrentChildForm.IconColor = System.Drawing.Color.White;
-            this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconCurrentChildForm.IconSize = 40;
-            this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
-            this.IconCurrentChildForm.Name = "IconCurrentChildForm";
-            this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
-            this.IconCurrentChildForm.TabIndex = 3;
-            this.IconCurrentChildForm.TabStop = false;
-            // 
-            // MinimizeButton
-            // 
-            this.MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MinimizeButton.FlatAppearance.BorderSize = 0;
-            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.MinimizeButton.IconColor = System.Drawing.Color.White;
-            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MinimizeButton.IconSize = 20;
-            this.MinimizeButton.Location = new System.Drawing.Point(572, 5);
-            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
-            this.MinimizeButton.TabIndex = 2;
-            this.MinimizeButton.UseVisualStyleBackColor = true;
-            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
-            // 
-            // MaximizeButton
-            // 
-            this.MaximizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MaximizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MaximizeButton.FlatAppearance.BorderSize = 0;
-            this.MaximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MaximizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.MaximizeButton.IconColor = System.Drawing.Color.White;
-            this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MaximizeButton.IconSize = 20;
-            this.MaximizeButton.Location = new System.Drawing.Point(590, 5);
-            this.MaximizeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeButton.Name = "MaximizeButton";
-            this.MaximizeButton.Size = new System.Drawing.Size(16, 16);
-            this.MaximizeButton.TabIndex = 1;
-            this.MaximizeButton.UseVisualStyleBackColor = true;
-            this.MaximizeButton.Click += new System.EventHandler(this.MaximizeButton_Click);
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ExitButton.FlatAppearance.BorderSize = 0;
-            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.ExitButton.IconColor = System.Drawing.Color.White;
-            this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(608, 5);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(16, 16);
-            this.ExitButton.TabIndex = 0;
-            this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // SetButton
             // 
@@ -315,6 +165,17 @@
             this.ManualButton.UseVisualStyleBackColor = true;
             this.ManualButton.Click += new System.EventHandler(this.ManualButton_Click);
             // 
+            // LogoBox
+            // 
+            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.LogoBox.Controls.Add(this.MainLogo);
+            this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoBox.Location = new System.Drawing.Point(0, 0);
+            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoBox.Name = "LogoBox";
+            this.LogoBox.Size = new System.Drawing.Size(176, 105);
+            this.LogoBox.TabIndex = 1;
+            // 
             // MainLogo
             // 
             this.MainLogo.Image = global::spt_0._1.Properties.Resources.main_logo;
@@ -324,6 +185,124 @@
             this.MainLogo.TabIndex = 0;
             this.MainLogo.TabStop = false;
             this.MainLogo.Click += new System.EventHandler(this.MainLogo_Click);
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Controls.Add(this.welcome);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDesktop.Location = new System.Drawing.Point(176, 105);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(628, 336);
+            this.panelDesktop.TabIndex = 3;
+            // 
+            // welcome
+            // 
+            this.welcome.AutoSize = true;
+            this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.welcome.Location = new System.Drawing.Point(38, 33);
+            this.welcome.Name = "welcome";
+            this.welcome.Size = new System.Drawing.Size(284, 37);
+            this.welcome.TabIndex = 0;
+            this.welcome.Text = "Welcome to SPT!!!";
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(176, 96);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(628, 9);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ExitButton.FlatAppearance.BorderSize = 0;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.ExitButton.IconColor = System.Drawing.Color.White;
+            this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ExitButton.IconSize = 20;
+            this.ExitButton.Location = new System.Drawing.Point(608, 5);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(16, 16);
+            this.ExitButton.TabIndex = 0;
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // MinimizeButton
+            // 
+            this.MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MinimizeButton.FlatAppearance.BorderSize = 0;
+            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.MinimizeButton.IconColor = System.Drawing.Color.White;
+            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimizeButton.IconSize = 20;
+            this.MinimizeButton.Location = new System.Drawing.Point(590, 5);
+            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
+            this.MinimizeButton.TabIndex = 2;
+            this.MinimizeButton.UseVisualStyleBackColor = true;
+            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
+            // 
+            // IconCurrentChildForm
+            // 
+            this.IconCurrentChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.IconCurrentChildForm.IconColor = System.Drawing.Color.White;
+            this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconCurrentChildForm.IconSize = 40;
+            this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
+            this.IconCurrentChildForm.Name = "IconCurrentChildForm";
+            this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
+            this.IconCurrentChildForm.TabIndex = 3;
+            this.IconCurrentChildForm.TabStop = false;
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(49, 72);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 18);
+            this.lblTitleChildForm.TabIndex = 4;
+            this.lblTitleChildForm.Text = "Home";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::spt_0._1.Properties.Resources.symbol1;
+            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // TextBar
+            // 
+            this.TextBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.TextBar.Controls.Add(this.pictureBox1);
+            this.TextBar.Controls.Add(this.lblTitleChildForm);
+            this.TextBar.Controls.Add(this.IconCurrentChildForm);
+            this.TextBar.Controls.Add(this.MinimizeButton);
+            this.TextBar.Controls.Add(this.ExitButton);
+            this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TextBar.Location = new System.Drawing.Point(176, 0);
+            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBar.Name = "TextBar";
+            this.TextBar.Size = new System.Drawing.Size(628, 96);
+            this.TextBar.TabIndex = 1;
+            this.TextBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseMove);
             // 
             // MainForm
             // 
@@ -336,6 +315,7 @@
             this.Controls.Add(this.TextBar);
             this.Controls.Add(this.LeftMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
@@ -343,13 +323,13 @@
             this.Text = "Form1";
             this.LeftMenu.ResumeLayout(false);
             this.LogoBox.ResumeLayout(false);
-            this.TextBar.ResumeLayout(false);
-            this.TextBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.TextBar.ResumeLayout(false);
+            this.TextBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -362,17 +342,16 @@
         private FontAwesome.Sharp.IconButton SetButton;
         private FontAwesome.Sharp.IconButton CheckButton;
         private FontAwesome.Sharp.IconButton EncrtpyButton;
-        private System.Windows.Forms.Panel TextBar;
-        private FontAwesome.Sharp.IconButton MinimizeButton;
-        private FontAwesome.Sharp.IconButton MaximizeButton;
-        private FontAwesome.Sharp.IconButton ExitButton;
-		private FontAwesome.Sharp.IconPictureBox IconCurrentChildForm;
-		private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Label welcome;
         private System.Windows.Forms.PictureBox MainLogo;
+        private System.Windows.Forms.Panel panelShadow;
+        private FontAwesome.Sharp.IconButton ExitButton;
+        private FontAwesome.Sharp.IconButton MinimizeButton;
+        private FontAwesome.Sharp.IconPictureBox IconCurrentChildForm;
+        private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel TextBar;
     }
 }
 

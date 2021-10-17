@@ -38,7 +38,6 @@ namespace spt_0._1.Forms
             this.btnEncryption = new System.Windows.Forms.Label();
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -47,7 +46,6 @@ namespace spt_0._1.Forms
             this.tabMenuSelectBack.SuspendLayout();
             this.menuPanel.SuspendLayout();
             this.tabMain.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +76,7 @@ namespace spt_0._1.Forms
             // 
             // selectBarPanel
             // 
-            this.selectBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.selectBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(183)))), ((int)(((byte)(182)))));
             this.selectBarPanel.Location = new System.Drawing.Point(0, 0);
             this.selectBarPanel.Name = "selectBarPanel";
             this.selectBarPanel.Size = new System.Drawing.Size(150, 3);
@@ -123,7 +121,7 @@ namespace spt_0._1.Forms
             // btnEncryption
             // 
             this.btnEncryption.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEncryption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.btnEncryption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(183)))), ((int)(((byte)(182)))));
             this.btnEncryption.Location = new System.Drawing.Point(0, 0);
             this.btnEncryption.Name = "btnEncryption";
             this.btnEncryption.Size = new System.Drawing.Size(150, 40);
@@ -148,8 +146,7 @@ namespace spt_0._1.Forms
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(219)))), ((int)(((byte)(218)))));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -157,18 +154,9 @@ namespace spt_0._1.Forms
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "page1";
-            // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(114)))));
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(212)))), ((int)(((byte)(231)))));
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -188,7 +176,7 @@ namespace spt_0._1.Forms
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(28)))));
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(220)))));
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -219,8 +207,6 @@ namespace spt_0._1.Forms
             this.tabMenuSelectBack.ResumeLayout(false);
             this.menuPanel.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -242,7 +228,6 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label btnSetting;
         private System.Windows.Forms.Label btnCheck;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
