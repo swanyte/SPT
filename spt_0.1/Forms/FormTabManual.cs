@@ -65,6 +65,43 @@ namespace spt_0._1.Forms
         {
             setMenuChange(2);
         }
+
+
+        private void VideoButtonE_Click_1(object sender, EventArgs e)
+        {
+            if (VideoPlayerS.Visible == false)
+            {
+                VideoPlayerS.Visible = true;
+            }
+            else
+            {
+                VideoPlayerS.Visible = false;
+            }
+        }
+
+        private void VideoButtonE_Click(object sender, EventArgs e)
+        {
+            if (VideoPlayerE.Visible == false)
+            {
+                VideoPlayerE.Visible = true;
+            }
+            else
+            {
+                VideoPlayerE.Visible = false;
+            }
+        }
+
+        private void VideoButtonC_Click(object sender, EventArgs e)
+        {
+            if (VideoPlayerC.Visible == false)
+            {
+                VideoPlayerC.Visible = true;
+            }
+            else
+            {
+                VideoPlayerC.Visible = false;
+            }
+        }
     }
 
 }

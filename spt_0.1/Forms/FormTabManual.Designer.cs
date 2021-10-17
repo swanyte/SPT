@@ -39,21 +39,26 @@ namespace spt_0._1.Forms
             this.btnEncryption = new System.Windows.Forms.Label();
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.VideoButtonE = new FontAwesome.Sharp.IconButton();
+            this.VideoPlayerE = new AxWMPLib.AxWindowsMediaPlayer();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.VideoButtonC = new FontAwesome.Sharp.IconButton();
+            this.VideoPlayerC = new AxWMPLib.AxWindowsMediaPlayer();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.axWindowsMediaPlayer3 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.VideoButtonS = new FontAwesome.Sharp.IconButton();
+            this.VideoPlayerS = new AxWMPLib.AxWindowsMediaPlayer();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabBack.SuspendLayout();
             this.tabMenuSelectBack.SuspendLayout();
             this.menuPanel.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VideoPlayerE)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VideoPlayerC)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VideoPlayerS)).BeginInit();
             this.SuspendLayout();
             // 
             // tabBack
@@ -153,7 +158,8 @@ namespace spt_0._1.Forms
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(219)))), ((int)(((byte)(218)))));
-            this.tabPage1.Controls.Add(this.axWindowsMediaPlayer1);
+            this.tabPage1.Controls.Add(this.VideoButtonE);
+            this.tabPage1.Controls.Add(this.VideoPlayerE);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -161,10 +167,42 @@ namespace spt_0._1.Forms
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
+            // VideoButtonE
+            // 
+            this.VideoButtonE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.VideoButtonE.FlatAppearance.BorderSize = 0;
+            this.VideoButtonE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VideoButtonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VideoButtonE.ForeColor = System.Drawing.Color.White;
+            this.VideoButtonE.IconChar = FontAwesome.Sharp.IconChar.PhotoVideo;
+            this.VideoButtonE.IconColor = System.Drawing.Color.White;
+            this.VideoButtonE.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.VideoButtonE.IconSize = 24;
+            this.VideoButtonE.Location = new System.Drawing.Point(484, 231);
+            this.VideoButtonE.Name = "VideoButtonE";
+            this.VideoButtonE.Size = new System.Drawing.Size(113, 30);
+            this.VideoButtonE.TabIndex = 12;
+            this.VideoButtonE.Text = "Video On/Off";
+            this.VideoButtonE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.VideoButtonE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VideoButtonE.UseVisualStyleBackColor = false;
+            this.VideoButtonE.Click += new System.EventHandler(this.VideoButtonE_Click);
+            // 
+            // VideoPlayerE
+            // 
+            this.VideoPlayerE.Enabled = true;
+            this.VideoPlayerE.Location = new System.Drawing.Point(7, 10);
+            this.VideoPlayerE.Name = "VideoPlayerE";
+            this.VideoPlayerE.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("VideoPlayerE.OcxState")));
+            this.VideoPlayerE.Size = new System.Drawing.Size(466, 251);
+            this.VideoPlayerE.TabIndex = 11;
+            this.VideoPlayerE.Visible = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(212)))), ((int)(((byte)(231)))));
-            this.tabPage2.Controls.Add(this.axWindowsMediaPlayer2);
+            this.tabPage2.Controls.Add(this.VideoButtonC);
+            this.tabPage2.Controls.Add(this.VideoPlayerC);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -172,42 +210,100 @@ namespace spt_0._1.Forms
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
+            // VideoButtonC
+            // 
+            this.VideoButtonC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(114)))));
+            this.VideoButtonC.FlatAppearance.BorderSize = 0;
+            this.VideoButtonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VideoButtonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VideoButtonC.ForeColor = System.Drawing.Color.White;
+            this.VideoButtonC.IconChar = FontAwesome.Sharp.IconChar.PhotoVideo;
+            this.VideoButtonC.IconColor = System.Drawing.Color.White;
+            this.VideoButtonC.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.VideoButtonC.IconSize = 24;
+            this.VideoButtonC.Location = new System.Drawing.Point(484, 231);
+            this.VideoButtonC.Name = "VideoButtonC";
+            this.VideoButtonC.Size = new System.Drawing.Size(113, 30);
+            this.VideoButtonC.TabIndex = 12;
+            this.VideoButtonC.Text = "Video On/Off";
+            this.VideoButtonC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.VideoButtonC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VideoButtonC.UseVisualStyleBackColor = false;
+            this.VideoButtonC.Click += new System.EventHandler(this.VideoButtonC_Click);
+            // 
+            // VideoPlayerC
+            // 
+            this.VideoPlayerC.Enabled = true;
+            this.VideoPlayerC.Location = new System.Drawing.Point(7, 10);
+            this.VideoPlayerC.Name = "VideoPlayerC";
+            this.VideoPlayerC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("VideoPlayerC.OcxState")));
+            this.VideoPlayerC.Size = new System.Drawing.Size(466, 251);
+            this.VideoPlayerC.TabIndex = 11;
+            this.VideoPlayerC.Visible = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(220)))));
-            this.tabPage3.Controls.Add(this.axWindowsMediaPlayer3);
+            this.tabPage3.Controls.Add(this.VideoButtonS);
+            this.tabPage3.Controls.Add(this.VideoPlayerS);
+            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(604, 270);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
-            // axWindowsMediaPlayer1
+            // VideoButtonS
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(6, 9);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(442, 237);
-            this.axWindowsMediaPlayer1.TabIndex = 0;
+            this.VideoButtonS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(28)))));
+            this.VideoButtonS.FlatAppearance.BorderSize = 0;
+            this.VideoButtonS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VideoButtonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VideoButtonS.ForeColor = System.Drawing.Color.White;
+            this.VideoButtonS.IconChar = FontAwesome.Sharp.IconChar.PhotoVideo;
+            this.VideoButtonS.IconColor = System.Drawing.Color.White;
+            this.VideoButtonS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.VideoButtonS.IconSize = 24;
+            this.VideoButtonS.Location = new System.Drawing.Point(484, 231);
+            this.VideoButtonS.Name = "VideoButtonS";
+            this.VideoButtonS.Size = new System.Drawing.Size(113, 30);
+            this.VideoButtonS.TabIndex = 10;
+            this.VideoButtonS.Text = "Video On/Off";
+            this.VideoButtonS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.VideoButtonS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VideoButtonS.UseVisualStyleBackColor = false;
+            this.VideoButtonS.Click += new System.EventHandler(this.VideoButtonE_Click_1);
             // 
-            // axWindowsMediaPlayer2
+            // VideoPlayerS
             // 
-            this.axWindowsMediaPlayer2.Enabled = true;
-            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(8, 9);
-            this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
-            this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
-            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(442, 237);
-            this.axWindowsMediaPlayer2.TabIndex = 1;
+            this.VideoPlayerS.Enabled = true;
+            this.VideoPlayerS.Location = new System.Drawing.Point(7, 10);
+            this.VideoPlayerS.Name = "VideoPlayerS";
+            this.VideoPlayerS.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("VideoPlayerS.OcxState")));
+            this.VideoPlayerS.Size = new System.Drawing.Size(466, 251);
+            this.VideoPlayerS.TabIndex = 2;
+            this.VideoPlayerS.Visible = false;
             // 
-            // axWindowsMediaPlayer3
+            // label2
             // 
-            this.axWindowsMediaPlayer3.Enabled = true;
-            this.axWindowsMediaPlayer3.Location = new System.Drawing.Point(8, 9);
-            this.axWindowsMediaPlayer3.Name = "axWindowsMediaPlayer3";
-            this.axWindowsMediaPlayer3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer3.OcxState")));
-            this.axWindowsMediaPlayer3.Size = new System.Drawing.Size(442, 237);
-            this.axWindowsMediaPlayer3.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(24, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(443, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "In Encryption page, you can ~~~~~~~~~~~~~~~~~~~~~~~~~~";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(294, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "In Encryption page, you can ~~~~";
             // 
             // FormTabManual
             // 
@@ -225,11 +321,12 @@ namespace spt_0._1.Forms
             this.menuPanel.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.VideoPlayerE)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.VideoPlayerC)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).EndInit();
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VideoPlayerS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,8 +344,13 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label btnSetting;
         private System.Windows.Forms.Label btnCheck;
         private System.Windows.Forms.TabPage tabPage3;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer2;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private AxWMPLib.AxWindowsMediaPlayer VideoPlayerS;
+        private FontAwesome.Sharp.IconButton VideoButtonS;
+        private FontAwesome.Sharp.IconButton VideoButtonE;
+        private AxWMPLib.AxWindowsMediaPlayer VideoPlayerE;
+        private FontAwesome.Sharp.IconButton VideoButtonC;
+        private AxWMPLib.AxWindowsMediaPlayer VideoPlayerC;
     }
 }
