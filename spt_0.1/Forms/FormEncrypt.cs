@@ -7,15 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace spt_0._1.Forms
 {
     public partial class FormEncrypt : Form
     {
+
+        public string qpwd;
+
+        string _server = "localhost"; //DB 서버 주소, 로컬일 경우 localhost
+        int _port = 3306; //DB 서버 포트
+        string _database = "test"; //DB 이름
+        string _id = "root"; //계정 아이디
+        string _pw = "root"; //계정 비밀번호
+        string _connectionAddress = "";
+        public string file_path = "";
+        string insert_path = "";
+
         public FormEncrypt()
         {
             InitializeComponent();
             this.AutoSize = false;
+
+            //MySQL 연결을 위한 주소 형식
+            _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
+
         }
         [DefaultValue(false)]
         [Browsable(true)]
@@ -33,7 +50,6 @@ namespace spt_0._1.Forms
         }
 
 
-
         private void openButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -46,5 +62,59 @@ namespace spt_0._1.Forms
                 textBox1.Text = file_path;
             }
         }
+
+        private void encryptButton_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            GeneratePW(13, rnd);
+            insertDB();
+        }
+
+        private void GeneratePW(int length, Random random)
+        {
+            //throw new NotImplementedException();
+            string characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            StringBuilder result = new StringBuilder(length);
+            for (int i = 0; i < length; i++)
+            {
+                result.Append(characters[random.Next(characters.Length)]);
+            }
+
+            qpwd = result.ToString();
+            //textBox1.Text = qpwd;
+
+        }
+
+        private void insertDB()
+        {
+            try
+            {
+                using (MySqlConnection mysql = new MySqlConnection(_connectionAddress))
+                {
+                    mysql.Open();
+
+                    file_path = textBox1.Text;
+                    insert_path = file_path.Replace("\\", "/");
+
+
+                    string insertQuery = string.Format("insert into test values( '{0}', '{1}')", insert_path, qpwd);
+
+                    MySqlCommand command = new MySqlCommand(insertQuery, mysql);
+                    MySqlDataReader table = command.ExecuteReader();
+
+                    while (table.Read())
+                    {
+                        //richTextBox1.Text = table["file_pwd"].ToString();
+                    }
+
+                    table.Close();
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+        }
+
     }
 }
