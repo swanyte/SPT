@@ -16,11 +16,11 @@ namespace spt_0._1.Forms
 
         public string qpwd;
 
-        string _server = "localhost"; //DB 서버 주소, 로컬일 경우 localhost
+        string _server = ""; //DB 서버 주소, 로컬일 경우 localhost
         int _port = 3306; //DB 서버 포트
         string _database = "test"; //DB 이름
-        string _id = "root"; //계정 아이디
-        string _pw = "root"; //계정 비밀번호
+        string _id = "sis4"; //계정 아이디
+        string _pw = "sis4"; //계정 비밀번호
         string _connectionAddress = "";
         public string file_path = "";
         string insert_path = "";
@@ -31,7 +31,7 @@ namespace spt_0._1.Forms
             this.AutoSize = false;
 
             //MySQL 연결을 위한 주소 형식
-            _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
+            _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4};SSL Mode=None", _server, _port, _database, _id, _pw);
 
         }
         [DefaultValue(false)]

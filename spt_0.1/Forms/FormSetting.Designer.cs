@@ -29,15 +29,28 @@ namespace spt_0._1.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.interstitialAd1 = new AdsJumboWinForm.InterstitialAd();
             this.SuspendLayout();
+            // 
+            // interstitialAd1
+            // 
+            this.interstitialAd1.ApplicationId = null;
+            this.interstitialAd1.BackColor = System.Drawing.Color.Black;
+            this.interstitialAd1.Location = new System.Drawing.Point(695, 74);
+            this.interstitialAd1.Name = "interstitialAd1";
+            this.interstitialAd1.Size = new System.Drawing.Size(50, 50);
+            this.interstitialAd1.TabIndex = 0;
+            this.interstitialAd1.Visible = false;
             // 
             // FormSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(628, 336);
+            this.ClientSize = new System.Drawing.Size(942, 504);
+            this.Controls.Add(this.interstitialAd1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormSetting";
             this.Text = "FormSetting";
             this.ResumeLayout(false);
@@ -45,5 +58,7 @@ namespace spt_0._1.Forms
         }
 
         #endregion
+
+        private AdsJumboWinForm.InterstitialAd interstitialAd1;
     }
 }

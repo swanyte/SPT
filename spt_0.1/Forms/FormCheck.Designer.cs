@@ -41,6 +41,7 @@ namespace spt_0._1.Forms
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "워드 파일(*.docx)|*.docx";
             // 
             // textBox1
             // 
@@ -104,7 +105,7 @@ namespace spt_0._1.Forms
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 24;
             this.iconButton2.Location = new System.Drawing.Point(496, 289);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(200, 38);
             this.iconButton2.TabIndex = 9;
@@ -125,7 +126,7 @@ namespace spt_0._1.Forms
             this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.openButton.IconSize = 24;
             this.openButton.Location = new System.Drawing.Point(496, 112);
-            this.openButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.openButton.Margin = new System.Windows.Forms.Padding(4);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(81, 38);
             this.openButton.TabIndex = 8;
@@ -147,7 +148,7 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCheck";
             this.Text = "FormCheck";
             this.Load += new System.EventHandler(this.FormCheck_Load);

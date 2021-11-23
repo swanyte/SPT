@@ -41,7 +41,7 @@ namespace spt_0._1.Forms
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "파일 경로";
-            this.openFileDialog1.Filter = "워드 파일(*.docx)|*.docx|모든 파일(*.*)|*.*";
+            this.openFileDialog1.Filter = "워드 파일(*.docx)|*.docx";
             this.openFileDialog1.InitialDirectory = "C:";
             this.openFileDialog1.Multiselect = true;
             this.openFileDialog1.Title = "경로 지정";
@@ -112,7 +112,7 @@ namespace spt_0._1.Forms
             this.encryptButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.encryptButton.IconSize = 24;
             this.encryptButton.Location = new System.Drawing.Point(49, 264);
-            this.encryptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.encryptButton.Margin = new System.Windows.Forms.Padding(4);
             this.encryptButton.Name = "encryptButton";
             this.encryptButton.Size = new System.Drawing.Size(125, 50);
             this.encryptButton.TabIndex = 12;
@@ -133,7 +133,7 @@ namespace spt_0._1.Forms
             this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.openButton.IconSize = 24;
             this.openButton.Location = new System.Drawing.Point(496, 112);
-            this.openButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.openButton.Margin = new System.Windows.Forms.Padding(4);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(81, 38);
             this.openButton.TabIndex = 9;
@@ -155,7 +155,7 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.checkBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEncrypt";
             this.Text = "FormEncrypt";
             this.Load += new System.EventHandler(this.FormEncrypt_Load);
