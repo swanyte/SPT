@@ -60,12 +60,12 @@ namespace spt_0._1.Forms
             this.tabBack.Controls.Add(this.tabMain);
             this.tabBack.Location = new System.Drawing.Point(12, 12);
             this.tabBack.Name = "tabBack";
-            this.tabBack.Size = new System.Drawing.Size(604, 312);
+            this.tabBack.Size = new System.Drawing.Size(604, 291);
             this.tabBack.TabIndex = 0;
             // 
             // tabMenuSelectBack
             // 
-            this.tabMenuSelectBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(144)))), ((int)(((byte)(147)))));
+            this.tabMenuSelectBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.tabMenuSelectBack.Controls.Add(this.selectBarPanel);
             this.tabMenuSelectBack.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabMenuSelectBack.Location = new System.Drawing.Point(0, 40);
@@ -75,7 +75,7 @@ namespace spt_0._1.Forms
             // 
             // selectBarPanel
             // 
-            this.selectBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(183)))), ((int)(((byte)(182)))));
+            this.selectBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
             this.selectBarPanel.Location = new System.Drawing.Point(0, 0);
             this.selectBarPanel.Name = "selectBarPanel";
             this.selectBarPanel.Size = new System.Drawing.Size(150, 3);
@@ -83,7 +83,7 @@ namespace spt_0._1.Forms
             // 
             // menuPanel
             // 
-            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(151)))), ((int)(((byte)(89)))));
+            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.menuPanel.Controls.Add(this.btnSetting);
             this.menuPanel.Controls.Add(this.btnCheck);
             this.menuPanel.Controls.Add(this.btnEncryption);
@@ -120,7 +120,7 @@ namespace spt_0._1.Forms
             // btnEncryption
             // 
             this.btnEncryption.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEncryption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(183)))), ((int)(((byte)(182)))));
+            this.btnEncryption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
             this.btnEncryption.Location = new System.Drawing.Point(0, 0);
             this.btnEncryption.Name = "btnEncryption";
             this.btnEncryption.Size = new System.Drawing.Size(150, 40);
@@ -139,38 +139,39 @@ namespace spt_0._1.Forms
             this.tabMain.Controls.Add(this.tabPage3);
             this.tabMain.Location = new System.Drawing.Point(-4, 18);
             this.tabMain.Name = "tabMain";
+            this.tabMain.Padding = new System.Drawing.Point(0, 0);
             this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(612, 296);
+            this.tabMain.Size = new System.Drawing.Size(612, 275);
             this.tabMain.TabIndex = 2;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(219)))), ((int)(((byte)(218)))));
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(241)))));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(604, 270);
+            this.tabPage1.Size = new System.Drawing.Size(604, 249);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(212)))), ((int)(((byte)(231)))));
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(254)))));
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(604, 270);
+            this.tabPage2.Size = new System.Drawing.Size(604, 249);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(220)))));
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(230)))));
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(604, 270);
+            this.tabPage3.Size = new System.Drawing.Size(604, 249);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
@@ -196,10 +197,9 @@ namespace spt_0._1.Forms
             // 
             // FormTabManual
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(628, 336);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.ClientSize = new System.Drawing.Size(628, 315);
             this.Controls.Add(this.tabBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTabManual";
@@ -224,11 +224,11 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label btnEncryption;
         private System.Windows.Forms.TabControl tabMain;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label btnSetting;
         private System.Windows.Forms.Label btnCheck;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }

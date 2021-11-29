@@ -116,5 +116,9 @@ namespace spt_0._1.Forms
             }
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

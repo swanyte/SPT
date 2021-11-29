@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.LeftMenu = new System.Windows.Forms.Panel();
-            this.SetButton = new FontAwesome.Sharp.IconButton();
-            this.CheckButton = new FontAwesome.Sharp.IconButton();
-            this.EncrtpyButton = new FontAwesome.Sharp.IconButton();
-            this.ManualButton = new FontAwesome.Sharp.IconButton();
-            this.LogoBox = new System.Windows.Forms.Panel();
-            this.MainLogo = new System.Windows.Forms.PictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.bannerAds1 = new AdsJumboWinForm.BannerAds();
             this.welcome = new System.Windows.Forms.Label();
@@ -47,159 +40,33 @@
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
             this.ExitButton = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LeftMenu.SuspendLayout();
-            this.LogoBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).BeginInit();
+            this.LogoBox = new System.Windows.Forms.Panel();
+            this.MainLogo = new System.Windows.Forms.PictureBox();
+            this.ManualButton = new FontAwesome.Sharp.IconButton();
+            this.EncrtpyButton = new FontAwesome.Sharp.IconButton();
+            this.CheckButton = new FontAwesome.Sharp.IconButton();
+            this.SetButton = new FontAwesome.Sharp.IconButton();
+            this.LeftMenu = new System.Windows.Forms.Panel();
             this.panelDesktop.SuspendLayout();
             this.TextBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.LogoBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).BeginInit();
+            this.LeftMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // LeftMenu
-            // 
-            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.LeftMenu.Controls.Add(this.SetButton);
-            this.LeftMenu.Controls.Add(this.CheckButton);
-            this.LeftMenu.Controls.Add(this.EncrtpyButton);
-            this.LeftMenu.Controls.Add(this.ManualButton);
-            this.LeftMenu.Controls.Add(this.LogoBox);
-            this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftMenu.Location = new System.Drawing.Point(0, 0);
-            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.LeftMenu.Name = "LeftMenu";
-            this.LeftMenu.Size = new System.Drawing.Size(176, 441);
-            this.LeftMenu.TabIndex = 0;
-            // 
-            // SetButton
-            // 
-            this.SetButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.SetButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SetButton.FlatAppearance.BorderSize = 0;
-            this.SetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.SetButton.ForeColor = System.Drawing.Color.White;
-            this.SetButton.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.SetButton.IconColor = System.Drawing.Color.White;
-            this.SetButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.SetButton.IconSize = 36;
-            this.SetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SetButton.Location = new System.Drawing.Point(0, 381);
-            this.SetButton.Margin = new System.Windows.Forms.Padding(2);
-            this.SetButton.Name = "SetButton";
-            this.SetButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.SetButton.Size = new System.Drawing.Size(176, 60);
-            this.SetButton.TabIndex = 4;
-            this.SetButton.Text = "Setting";
-            this.SetButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SetButton.UseVisualStyleBackColor = true;
-            this.SetButton.Click += new System.EventHandler(this.SetButton_Click);
-            // 
-            // CheckButton
-            // 
-            this.CheckButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.CheckButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CheckButton.FlatAppearance.BorderSize = 0;
-            this.CheckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CheckButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.CheckButton.ForeColor = System.Drawing.Color.White;
-            this.CheckButton.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
-            this.CheckButton.IconColor = System.Drawing.Color.White;
-            this.CheckButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CheckButton.IconSize = 36;
-            this.CheckButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CheckButton.Location = new System.Drawing.Point(0, 225);
-            this.CheckButton.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckButton.Name = "CheckButton";
-            this.CheckButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.CheckButton.Size = new System.Drawing.Size(176, 60);
-            this.CheckButton.TabIndex = 3;
-            this.CheckButton.Text = "Check Password";
-            this.CheckButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CheckButton.UseVisualStyleBackColor = true;
-            this.CheckButton.Click += new System.EventHandler(this.CheckButton_Click);
-            // 
-            // EncrtpyButton
-            // 
-            this.EncrtpyButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.EncrtpyButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.EncrtpyButton.FlatAppearance.BorderSize = 0;
-            this.EncrtpyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EncrtpyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.EncrtpyButton.ForeColor = System.Drawing.Color.White;
-            this.EncrtpyButton.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.EncrtpyButton.IconColor = System.Drawing.Color.White;
-            this.EncrtpyButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EncrtpyButton.IconSize = 36;
-            this.EncrtpyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EncrtpyButton.Location = new System.Drawing.Point(0, 165);
-            this.EncrtpyButton.Margin = new System.Windows.Forms.Padding(2);
-            this.EncrtpyButton.Name = "EncrtpyButton";
-            this.EncrtpyButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.EncrtpyButton.Size = new System.Drawing.Size(176, 60);
-            this.EncrtpyButton.TabIndex = 2;
-            this.EncrtpyButton.Text = "Encryption";
-            this.EncrtpyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EncrtpyButton.UseVisualStyleBackColor = true;
-            this.EncrtpyButton.Click += new System.EventHandler(this.EncrtpyButton_Click);
-            // 
-            // ManualButton
-            // 
-            this.ManualButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.ManualButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ManualButton.FlatAppearance.BorderSize = 0;
-            this.ManualButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ManualButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ManualButton.ForeColor = System.Drawing.Color.White;
-            this.ManualButton.IconChar = FontAwesome.Sharp.IconChar.AlignJustify;
-            this.ManualButton.IconColor = System.Drawing.Color.White;
-            this.ManualButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ManualButton.IconSize = 36;
-            this.ManualButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ManualButton.Location = new System.Drawing.Point(0, 105);
-            this.ManualButton.Margin = new System.Windows.Forms.Padding(2);
-            this.ManualButton.Name = "ManualButton";
-            this.ManualButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.ManualButton.Size = new System.Drawing.Size(176, 60);
-            this.ManualButton.TabIndex = 0;
-            this.ManualButton.Text = "Manual";
-            this.ManualButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ManualButton.UseVisualStyleBackColor = true;
-            this.ManualButton.Click += new System.EventHandler(this.ManualButton_Click);
-            // 
-            // LogoBox
-            // 
-            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.LogoBox.Controls.Add(this.MainLogo);
-            this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LogoBox.Location = new System.Drawing.Point(0, 0);
-            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
-            this.LogoBox.Name = "LogoBox";
-            this.LogoBox.Size = new System.Drawing.Size(176, 105);
-            this.LogoBox.TabIndex = 1;
-            // 
-            // MainLogo
-            // 
-            this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
-            this.MainLogo.Location = new System.Drawing.Point(0, 0);
-            this.MainLogo.Name = "MainLogo";
-            this.MainLogo.Size = new System.Drawing.Size(176, 105);
-            this.MainLogo.TabIndex = 0;
-            this.MainLogo.TabStop = false;
-            this.MainLogo.Click += new System.EventHandler(this.MainLogo_Click);
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.panelDesktop.Controls.Add(this.bannerAds1);
             this.panelDesktop.Controls.Add(this.welcome);
             this.panelDesktop.Controls.Add(this.panel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.Location = new System.Drawing.Point(176, 105);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(628, 336);
+            this.panelDesktop.Size = new System.Drawing.Size(628, 375);
             this.panelDesktop.TabIndex = 3;
             // 
             // bannerAds1
@@ -210,10 +77,10 @@
             this.bannerAds1.ApplicationId = null;
             this.bannerAds1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.bannerAds1.HeightAd = 0;
-            this.bannerAds1.Location = new System.Drawing.Point(86, 270);
-            this.bannerAds1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bannerAds1.Location = new System.Drawing.Point(83, 2);
+            this.bannerAds1.Margin = new System.Windows.Forms.Padding(0);
             this.bannerAds1.Name = "bannerAds1";
-            this.bannerAds1.Padding = new System.Windows.Forms.Padding(5);
+            this.bannerAds1.Padding = new System.Windows.Forms.Padding(2);
             this.bannerAds1.Size = new System.Drawing.Size(468, 60);
             this.bannerAds1.TabIndex = 1;
             this.bannerAds1.WidthAd = 0;
@@ -328,18 +195,151 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.panel1.Controls.Add(this.bannerAds1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 266);
+            this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 70);
+            this.panel1.Size = new System.Drawing.Size(628, 65);
             this.panel1.TabIndex = 2;
+            // 
+            // LogoBox
+            // 
+            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.LogoBox.Controls.Add(this.MainLogo);
+            this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoBox.Location = new System.Drawing.Point(0, 0);
+            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoBox.Name = "LogoBox";
+            this.LogoBox.Size = new System.Drawing.Size(176, 105);
+            this.LogoBox.TabIndex = 1;
+            // 
+            // MainLogo
+            // 
+            this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
+            this.MainLogo.Location = new System.Drawing.Point(0, 0);
+            this.MainLogo.Name = "MainLogo";
+            this.MainLogo.Size = new System.Drawing.Size(176, 105);
+            this.MainLogo.TabIndex = 0;
+            this.MainLogo.TabStop = false;
+            this.MainLogo.Click += new System.EventHandler(this.MainLogo_Click);
+            // 
+            // ManualButton
+            // 
+            this.ManualButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.ManualButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ManualButton.FlatAppearance.BorderSize = 0;
+            this.ManualButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ManualButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.ManualButton.ForeColor = System.Drawing.Color.White;
+            this.ManualButton.IconChar = FontAwesome.Sharp.IconChar.AlignJustify;
+            this.ManualButton.IconColor = System.Drawing.Color.White;
+            this.ManualButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ManualButton.IconSize = 36;
+            this.ManualButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ManualButton.Location = new System.Drawing.Point(0, 105);
+            this.ManualButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ManualButton.Name = "ManualButton";
+            this.ManualButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.ManualButton.Size = new System.Drawing.Size(176, 60);
+            this.ManualButton.TabIndex = 0;
+            this.ManualButton.Text = "Manual";
+            this.ManualButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ManualButton.UseVisualStyleBackColor = true;
+            this.ManualButton.Click += new System.EventHandler(this.ManualButton_Click);
+            // 
+            // EncrtpyButton
+            // 
+            this.EncrtpyButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.EncrtpyButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.EncrtpyButton.FlatAppearance.BorderSize = 0;
+            this.EncrtpyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EncrtpyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.EncrtpyButton.ForeColor = System.Drawing.Color.White;
+            this.EncrtpyButton.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.EncrtpyButton.IconColor = System.Drawing.Color.White;
+            this.EncrtpyButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.EncrtpyButton.IconSize = 36;
+            this.EncrtpyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EncrtpyButton.Location = new System.Drawing.Point(0, 165);
+            this.EncrtpyButton.Margin = new System.Windows.Forms.Padding(2);
+            this.EncrtpyButton.Name = "EncrtpyButton";
+            this.EncrtpyButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.EncrtpyButton.Size = new System.Drawing.Size(176, 60);
+            this.EncrtpyButton.TabIndex = 2;
+            this.EncrtpyButton.Text = "Encryption";
+            this.EncrtpyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.EncrtpyButton.UseVisualStyleBackColor = true;
+            this.EncrtpyButton.Click += new System.EventHandler(this.EncrtpyButton_Click);
+            // 
+            // CheckButton
+            // 
+            this.CheckButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.CheckButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CheckButton.FlatAppearance.BorderSize = 0;
+            this.CheckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CheckButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.CheckButton.ForeColor = System.Drawing.Color.White;
+            this.CheckButton.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.CheckButton.IconColor = System.Drawing.Color.White;
+            this.CheckButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CheckButton.IconSize = 36;
+            this.CheckButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CheckButton.Location = new System.Drawing.Point(0, 225);
+            this.CheckButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckButton.Name = "CheckButton";
+            this.CheckButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.CheckButton.Size = new System.Drawing.Size(176, 60);
+            this.CheckButton.TabIndex = 3;
+            this.CheckButton.Text = "Check Password";
+            this.CheckButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CheckButton.UseVisualStyleBackColor = true;
+            this.CheckButton.Click += new System.EventHandler(this.CheckButton_Click);
+            // 
+            // SetButton
+            // 
+            this.SetButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.SetButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.SetButton.FlatAppearance.BorderSize = 0;
+            this.SetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.SetButton.ForeColor = System.Drawing.Color.White;
+            this.SetButton.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.SetButton.IconColor = System.Drawing.Color.White;
+            this.SetButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.SetButton.IconSize = 36;
+            this.SetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SetButton.Location = new System.Drawing.Point(0, 420);
+            this.SetButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SetButton.Name = "SetButton";
+            this.SetButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.SetButton.Size = new System.Drawing.Size(176, 60);
+            this.SetButton.TabIndex = 4;
+            this.SetButton.Text = "Setting";
+            this.SetButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SetButton.UseVisualStyleBackColor = true;
+            this.SetButton.Click += new System.EventHandler(this.SetButton_Click);
+            // 
+            // LeftMenu
+            // 
+            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.LeftMenu.Controls.Add(this.SetButton);
+            this.LeftMenu.Controls.Add(this.CheckButton);
+            this.LeftMenu.Controls.Add(this.EncrtpyButton);
+            this.LeftMenu.Controls.Add(this.ManualButton);
+            this.LeftMenu.Controls.Add(this.LogoBox);
+            this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftMenu.Location = new System.Drawing.Point(0, 0);
+            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.LeftMenu.Name = "LeftMenu";
+            this.LeftMenu.Size = new System.Drawing.Size(176, 480);
+            this.LeftMenu.TabIndex = 0;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(804, 441);
+            this.ClientSize = new System.Drawing.Size(804, 480);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.TextBar);
@@ -351,30 +351,23 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.LeftMenu.ResumeLayout(false);
-            this.LogoBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             this.TextBar.ResumeLayout(false);
             this.TextBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.LogoBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
+            this.LeftMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel LeftMenu;
-        private FontAwesome.Sharp.IconButton ManualButton;
-        private System.Windows.Forms.Panel LogoBox;
-        private FontAwesome.Sharp.IconButton SetButton;
-        private FontAwesome.Sharp.IconButton CheckButton;
-        private FontAwesome.Sharp.IconButton EncrtpyButton;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label welcome;
-        private System.Windows.Forms.PictureBox MainLogo;
         private System.Windows.Forms.Panel panelShadow;
         private FontAwesome.Sharp.IconButton ExitButton;
         private FontAwesome.Sharp.IconButton MinimizeButton;
@@ -384,6 +377,13 @@
         private System.Windows.Forms.Panel TextBar;
         private AdsJumboWinForm.BannerAds bannerAds1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel LogoBox;
+        private System.Windows.Forms.PictureBox MainLogo;
+        private FontAwesome.Sharp.IconButton ManualButton;
+        private FontAwesome.Sharp.IconButton EncrtpyButton;
+        private FontAwesome.Sharp.IconButton CheckButton;
+        private FontAwesome.Sharp.IconButton SetButton;
+        private System.Windows.Forms.Panel LeftMenu;
     }
 }
 

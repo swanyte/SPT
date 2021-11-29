@@ -32,9 +32,9 @@ namespace spt_0._1.Forms
             menws.Add(btnSetting);
 
             menw_colors = new List<Color>();
-            menw_colors.Add(Color.FromArgb(230, 183, 182));
-            menw_colors.Add(Color.FromArgb(179, 171, 207));
-            menw_colors.Add(Color.FromArgb(255, 231, 186));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
+            menw_colors.Add(Color.FromArgb(245, 199, 247));
+            menw_colors.Add(Color.FromArgb(253, 138, 114));
 
             //시작 TabPage 설정
             tabMain.SelectedIndex = 0;
@@ -67,41 +67,6 @@ namespace spt_0._1.Forms
         }
 
 
-        private void VideoButtonE_Click_1(object sender, EventArgs e)
-        {
-            if (VideoPlayerS.Visible == false)
-            {
-                VideoPlayerS.Visible = true;
-            }
-            else
-            {
-                VideoPlayerS.Visible = false;
-            }
-        }
-
-        private void VideoButtonE_Click(object sender, EventArgs e)
-        {
-            if (VideoPlayerE.Visible == false)
-            {
-                VideoPlayerE.Visible = true;
-            }
-            else
-            {
-                VideoPlayerE.Visible = false;
-            }
-        }
-
-        private void VideoButtonC_Click(object sender, EventArgs e)
-        {
-            if (VideoPlayerC.Visible == false)
-            {
-                VideoPlayerC.Visible = true;
-            }
-            else
-            {
-                VideoPlayerC.Visible = false;
-            }
-        }
     }
 
 }

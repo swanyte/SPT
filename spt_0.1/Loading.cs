@@ -13,6 +13,7 @@ namespace spt_0._1
 {
     public partial class Loading : Form
     {
+        Random random = new Random();
         [DllImport("GDi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
@@ -40,16 +41,21 @@ namespace spt_0._1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            ProgressBar.Value += 3;
-            ProgressBar.Text = ProgressBar.Value.ToString() + "%";
-
-            if (ProgressBar.Value == 30)
+            if (ProgressBar.Value >= 100)
             {
                 timer1.Enabled = false;
                 MainForm main_form = new MainForm();
                 main_form.Show();
                 this.Hide();
             }
+            else
+            {
+                ProgressBar.Value += random.Next(1, 3);
+                ProgressBar.Text = ProgressBar.Value.ToString() + "%";
+            }
+            
+
+            
         }
 
         private void ProgressBar_Click(object sender, EventArgs e)
