@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AdsJumboWinForm;
-
 
 namespace spt_0._1.Forms
 {
@@ -17,9 +15,6 @@ namespace spt_0._1.Forms
         public FormSetting()
         {
             InitializeComponent();
-            interstitialAd1.ShowInterstitialAd("4cyjwj6b6mc1");
-            
-
         }
     }
 }

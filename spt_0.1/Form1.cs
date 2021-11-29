@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using spt_0._1.Forms;
-using AdsJumboWinForm;
 
 namespace spt_0._1
 {
@@ -26,10 +25,11 @@ namespace spt_0._1
         public MainForm()
         {
             InitializeComponent();
-            bannerAds1.ShowAd(320, 50, "4cyjwj6b6mc1");
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(5, 60);
             LeftMenu.Controls.Add(leftBorderBtn);
+            bannerAds1.ShowAd(468, 60, "588voyqtignz");
+
             //Form
             //this.Text = string.Empty;
             //this.ControlBox = false;
@@ -232,7 +232,5 @@ namespace spt_0._1
             ReleaseCapture();
             SendMessage(this.Handle, SYSTEMCOMMAND, SC_DRAGMOVE, 0);
         }
-
-
     }
 }
