@@ -37,27 +37,28 @@
             this.LogoBox = new System.Windows.Forms.Panel();
             this.MainLogo = new System.Windows.Forms.PictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.bannerAds1 = new AdsJumboWinForm.BannerAds();
             this.welcome = new System.Windows.Forms.Label();
             this.panelShadow = new System.Windows.Forms.Panel();
-            this.ExitButton = new FontAwesome.Sharp.IconButton();
-            this.MinimizeButton = new FontAwesome.Sharp.IconButton();
-            this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TextBar = new System.Windows.Forms.Panel();
-            this.bannerAds1 = new AdsJumboWinForm.BannerAds();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.MinimizeButton = new FontAwesome.Sharp.IconButton();
+            this.ExitButton = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.LeftMenu.SuspendLayout();
             this.LogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).BeginInit();
             this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.TextBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
             this.SuspendLayout();
             // 
             // LeftMenu
             // 
-            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(112)))), ((int)(((byte)(114)))));
+            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.LeftMenu.Controls.Add(this.SetButton);
             this.LeftMenu.Controls.Add(this.CheckButton);
             this.LeftMenu.Controls.Add(this.EncrtpyButton);
@@ -179,7 +180,8 @@
             // 
             // MainLogo
             // 
-            this.MainLogo.Image = global::spt_0._1.Properties.Resources.main_logo;
+            this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
             this.MainLogo.Location = new System.Drawing.Point(0, 0);
             this.MainLogo.Name = "MainLogo";
             this.MainLogo.Size = new System.Drawing.Size(176, 105);
@@ -189,9 +191,10 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.panelDesktop.Controls.Add(this.bannerAds1);
             this.panelDesktop.Controls.Add(this.welcome);
+            this.panelDesktop.Controls.Add(this.panel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.Location = new System.Drawing.Point(176, 105);
@@ -199,11 +202,27 @@
             this.panelDesktop.Size = new System.Drawing.Size(628, 336);
             this.panelDesktop.TabIndex = 3;
             // 
+            // bannerAds1
+            // 
+            this.bannerAds1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bannerAds1.ApplicationId = null;
+            this.bannerAds1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.bannerAds1.HeightAd = 0;
+            this.bannerAds1.Location = new System.Drawing.Point(86, 270);
+            this.bannerAds1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bannerAds1.Name = "bannerAds1";
+            this.bannerAds1.Padding = new System.Windows.Forms.Padding(5);
+            this.bannerAds1.Size = new System.Drawing.Size(468, 60);
+            this.bannerAds1.TabIndex = 1;
+            this.bannerAds1.WidthAd = 0;
+            // 
             // welcome
             // 
             this.welcome.AutoSize = true;
             this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.welcome.Location = new System.Drawing.Point(38, 33);
             this.welcome.Name = "welcome";
             this.welcome.Size = new System.Drawing.Size(284, 37);
@@ -212,30 +231,63 @@
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(176, 96);
             this.panelShadow.Name = "panelShadow";
             this.panelShadow.Size = new System.Drawing.Size(628, 9);
             this.panelShadow.TabIndex = 2;
             // 
-            // ExitButton
+            // lblTitleChildForm
             // 
-            this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ExitButton.FlatAppearance.BorderSize = 0;
-            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.ExitButton.IconColor = System.Drawing.Color.White;
-            this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(608, 5);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(16, 16);
-            this.ExitButton.TabIndex = 0;
-            this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(49, 72);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 18);
+            this.lblTitleChildForm.TabIndex = 4;
+            this.lblTitleChildForm.Text = "Home";
+            // 
+            // TextBar
+            // 
+            this.TextBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.TextBar.Controls.Add(this.pictureBox1);
+            this.TextBar.Controls.Add(this.lblTitleChildForm);
+            this.TextBar.Controls.Add(this.IconCurrentChildForm);
+            this.TextBar.Controls.Add(this.MinimizeButton);
+            this.TextBar.Controls.Add(this.ExitButton);
+            this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TextBar.Location = new System.Drawing.Point(176, 0);
+            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBar.Name = "TextBar";
+            this.TextBar.Size = new System.Drawing.Size(628, 96);
+            this.TextBar.TabIndex = 1;
+            this.TextBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::spt_0._1.Properties.Resources.pbl;
+            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // IconCurrentChildForm
+            // 
+            this.IconCurrentChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.IconCurrentChildForm.IconColor = System.Drawing.Color.White;
+            this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconCurrentChildForm.IconSize = 40;
+            this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
+            this.IconCurrentChildForm.Name = "IconCurrentChildForm";
+            this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
+            this.IconCurrentChildForm.TabIndex = 3;
+            this.IconCurrentChildForm.TabStop = false;
             // 
             // MinimizeButton
             // 
@@ -255,68 +307,32 @@
             this.MinimizeButton.UseVisualStyleBackColor = true;
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
             // 
-            // IconCurrentChildForm
+            // ExitButton
             // 
-            this.IconCurrentChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.IconCurrentChildForm.IconColor = System.Drawing.Color.White;
-            this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconCurrentChildForm.IconSize = 40;
-            this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
-            this.IconCurrentChildForm.Name = "IconCurrentChildForm";
-            this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
-            this.IconCurrentChildForm.TabIndex = 3;
-            this.IconCurrentChildForm.TabStop = false;
+            this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ExitButton.FlatAppearance.BorderSize = 0;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.ExitButton.IconColor = System.Drawing.Color.White;
+            this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ExitButton.IconSize = 20;
+            this.ExitButton.Location = new System.Drawing.Point(608, 5);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(16, 16);
+            this.ExitButton.TabIndex = 0;
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // lblTitleChildForm
+            // panel1
             // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(49, 72);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 18);
-            this.lblTitleChildForm.TabIndex = 4;
-            this.lblTitleChildForm.Text = "Home";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::spt_0._1.Properties.Resources.symbol1;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // TextBar
-            // 
-            this.TextBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.TextBar.Controls.Add(this.pictureBox1);
-            this.TextBar.Controls.Add(this.lblTitleChildForm);
-            this.TextBar.Controls.Add(this.IconCurrentChildForm);
-            this.TextBar.Controls.Add(this.MinimizeButton);
-            this.TextBar.Controls.Add(this.ExitButton);
-            this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TextBar.Location = new System.Drawing.Point(176, 0);
-            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBar.Name = "TextBar";
-            this.TextBar.Size = new System.Drawing.Size(628, 96);
-            this.TextBar.TabIndex = 1;
-            this.TextBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseMove);
-            // 
-            // bannerAds1
-            // 
-            this.bannerAds1.ApplicationId = null;
-            this.bannerAds1.BackColor = System.Drawing.Color.White;
-            this.bannerAds1.HeightAd = 0;
-            this.bannerAds1.Location = new System.Drawing.Point(86, 263);
-            this.bannerAds1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bannerAds1.Name = "bannerAds1";
-            this.bannerAds1.Size = new System.Drawing.Size(468, 60);
-            this.bannerAds1.TabIndex = 1;
-            this.bannerAds1.WidthAd = 0;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 266);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(628, 70);
+            this.panel1.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -340,10 +356,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.TextBar.ResumeLayout(false);
             this.TextBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -367,6 +383,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel TextBar;
         private AdsJumboWinForm.BannerAds bannerAds1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

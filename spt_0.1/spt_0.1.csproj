@@ -213,6 +213,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CloseButton.png" />
+    <None Include="Resources\SPT_Logo1.png" />
+    <None Include="Resources\pbl.jpg" />
     <Content Include="VisualStudioToolsManifest.xml" />
     <None Include="Resources\main_logo.png" />
     <None Include="Resources\활용형subUI%28silver%29.jpg" />

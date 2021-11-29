@@ -42,10 +42,10 @@ namespace spt_0._1
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(180, 151, 89);
-            public static Color color2 = Color.FromArgb(230, 183, 182);
-            public static Color color3 = Color.FromArgb(179, 171, 207);
-            public static Color color4 = Color.FromArgb(255, 231, 186);
+            public static Color color1 = Color.FromArgb(163, 147, 235);
+            public static Color color2 = Color.FromArgb(252, 133, 174);
+            public static Color color3 = Color.FromArgb(245, 199, 247);
+            public static Color color4 = Color.FromArgb(253, 138, 114);
         }
 
         //Methods
@@ -56,7 +56,7 @@ namespace spt_0._1
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(197, 112, 114);
+                currentBtn.BackColor = Color.FromArgb(39, 41, 109);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -80,7 +80,7 @@ namespace spt_0._1
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(197, 112, 114);
+                currentBtn.BackColor = Color.FromArgb(39, 41, 109);
                 currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.White;
