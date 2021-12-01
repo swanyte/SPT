@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.bannerAds1 = new AdsJumboWinForm.BannerAds();
             this.welcome = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bannerAds1 = new AdsJumboWinForm.BannerAds();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.TextBar = new System.Windows.Forms.Panel();
@@ -39,7 +40,6 @@
             this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
             this.ExitButton = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.LogoBox = new System.Windows.Forms.Panel();
             this.MainLogo = new System.Windows.Forms.PictureBox();
             this.ManualButton = new FontAwesome.Sharp.IconButton();
@@ -48,10 +48,10 @@
             this.SetButton = new FontAwesome.Sharp.IconButton();
             this.LeftMenu = new System.Windows.Forms.Panel();
             this.panelDesktop.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.TextBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
-            this.panel1.SuspendLayout();
             this.LogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).BeginInit();
             this.LeftMenu.SuspendLayout();
@@ -69,6 +69,27 @@
             this.panelDesktop.Size = new System.Drawing.Size(628, 375);
             this.panelDesktop.TabIndex = 3;
             // 
+            // welcome
+            // 
+            this.welcome.AutoSize = true;
+            this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.welcome.Location = new System.Drawing.Point(38, 33);
+            this.welcome.Name = "welcome";
+            this.welcome.Size = new System.Drawing.Size(284, 37);
+            this.welcome.TabIndex = 0;
+            this.welcome.Text = "Welcome to SPT!!!";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.panel1.Controls.Add(this.bannerAds1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 310);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(628, 65);
+            this.panel1.TabIndex = 2;
+            // 
             // bannerAds1
             // 
             this.bannerAds1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -84,17 +105,6 @@
             this.bannerAds1.Size = new System.Drawing.Size(468, 60);
             this.bannerAds1.TabIndex = 1;
             this.bannerAds1.WidthAd = 0;
-            // 
-            // welcome
-            // 
-            this.welcome.AutoSize = true;
-            this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.welcome.Location = new System.Drawing.Point(38, 33);
-            this.welcome.Name = "welcome";
-            this.welcome.Size = new System.Drawing.Size(284, 37);
-            this.welcome.TabIndex = 0;
-            this.welcome.Text = "Welcome to SPT!!!";
             // 
             // panelShadow
             // 
@@ -192,16 +202,6 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
-            this.panel1.Controls.Add(this.bannerAds1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 310);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 65);
-            this.panel1.TabIndex = 2;
-            // 
             // LogoBox
             // 
             this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
@@ -216,6 +216,7 @@
             // MainLogo
             // 
             this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.MainLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
             this.MainLogo.Location = new System.Drawing.Point(0, 0);
             this.MainLogo.Name = "MainLogo";
@@ -337,7 +338,8 @@
             // 
             // MainForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(804, 480);
             this.Controls.Add(this.panelDesktop);
@@ -353,11 +355,11 @@
             this.Text = "Form1";
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.TextBar.ResumeLayout(false);
             this.TextBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.LogoBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
             this.LeftMenu.ResumeLayout(false);

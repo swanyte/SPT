@@ -30,13 +30,13 @@ namespace spt_0._1.Forms
         private void InitializeComponent()
         {
             this.barpanel = new System.Windows.Forms.Panel();
+            this.MsgExitButton = new FontAwesome.Sharp.IconButton();
             this.ButtonYes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ButtonNo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.MsgExitButton = new FontAwesome.Sharp.IconButton();
             this.barpanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,24 @@ namespace spt_0._1.Forms
             this.barpanel.Name = "barpanel";
             this.barpanel.Size = new System.Drawing.Size(450, 21);
             this.barpanel.TabIndex = 0;
+            // 
+            // MsgExitButton
+            // 
+            this.MsgExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MsgExitButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MsgExitButton.FlatAppearance.BorderSize = 0;
+            this.MsgExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MsgExitButton.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.MsgExitButton.IconColor = System.Drawing.Color.White;
+            this.MsgExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MsgExitButton.IconSize = 18;
+            this.MsgExitButton.Location = new System.Drawing.Point(432, 0);
+            this.MsgExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.MsgExitButton.Name = "MsgExitButton";
+            this.MsgExitButton.Size = new System.Drawing.Size(18, 21);
+            this.MsgExitButton.TabIndex = 5;
+            this.MsgExitButton.UseVisualStyleBackColor = true;
+            this.MsgExitButton.Click += new System.EventHandler(this.MsgExitButton_Click);
             // 
             // ButtonYes
             // 
@@ -121,27 +139,10 @@ namespace spt_0._1.Forms
             this.panel3.Size = new System.Drawing.Size(2, 149);
             this.panel3.TabIndex = 7;
             // 
-            // MsgExitButton
-            // 
-            this.MsgExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MsgExitButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MsgExitButton.FlatAppearance.BorderSize = 0;
-            this.MsgExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MsgExitButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.MsgExitButton.IconColor = System.Drawing.Color.White;
-            this.MsgExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MsgExitButton.IconSize = 18;
-            this.MsgExitButton.Location = new System.Drawing.Point(432, 0);
-            this.MsgExitButton.Margin = new System.Windows.Forms.Padding(2);
-            this.MsgExitButton.Name = "MsgExitButton";
-            this.MsgExitButton.Size = new System.Drawing.Size(18, 21);
-            this.MsgExitButton.TabIndex = 5;
-            this.MsgExitButton.UseVisualStyleBackColor = true;
-            this.MsgExitButton.Click += new System.EventHandler(this.MsgExitButton_Click);
-            // 
             // MessageExit
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(450, 172);
             this.Controls.Add(this.panel3);

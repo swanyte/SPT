@@ -41,7 +41,7 @@ namespace spt_0._1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (ProgressBar.Value >= 100)
+            if (ProgressBar.Value == 100)
             {
                 timer1.Enabled = false;
                 MainForm main_form = new MainForm();
@@ -50,7 +50,15 @@ namespace spt_0._1
             }
             else
             {
-                ProgressBar.Value += random.Next(1, 3);
+                if (ProgressBar.Value < 90)
+                {
+                    ProgressBar.Value += random.Next(1, 5);
+                }
+                else
+                {
+                    ProgressBar.Value += 1;
+                }
+
                 ProgressBar.Text = ProgressBar.Value.ToString() + "%";
             }
             
