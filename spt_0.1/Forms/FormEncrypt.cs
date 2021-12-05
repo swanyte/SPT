@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Word = Microsoft.Office.Interop.Word;
+using Office = Microsoft.Office.Core;
 
 namespace spt_0._1.Forms
 {
@@ -61,6 +63,15 @@ namespace spt_0._1.Forms
                 file_path = openFileDialog1.FileName;
                 textBox1.Text = file_path;
             }
+            var wordApp = new Word.Application();
+            wordApp.Visible = true;
+            wordApp.Documents.Open(file_path);
+            Word.Document doc = wordApp.ActiveDocument;
+
+            doc.Password = "123";
+
+            doc.Save();
+            wordApp.Quit();
         }
 
         private void encryptButton_Click(object sender, EventArgs e)
@@ -119,6 +130,11 @@ namespace spt_0._1.Forms
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
