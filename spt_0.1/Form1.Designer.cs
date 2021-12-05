@@ -64,10 +64,9 @@
             this.panelDesktop.Controls.Add(this.panel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelDesktop.Location = new System.Drawing.Point(264, 158);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDesktop.Location = new System.Drawing.Point(176, 105);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(942, 562);
+            this.panelDesktop.Size = new System.Drawing.Size(628, 375);
             this.panelDesktop.TabIndex = 3;
             // 
             // welcome
@@ -75,10 +74,9 @@
             this.welcome.AutoSize = true;
             this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.welcome.Location = new System.Drawing.Point(57, 50);
-            this.welcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcome.Location = new System.Drawing.Point(38, 33);
             this.welcome.Name = "welcome";
-            this.welcome.Size = new System.Drawing.Size(422, 55);
+            this.welcome.Size = new System.Drawing.Size(284, 37);
             this.welcome.TabIndex = 0;
             this.welcome.Text = "Welcome to SPT!!!";
             // 
@@ -87,25 +85,22 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.panel1.Controls.Add(this.bannerAds1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 464);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(942, 98);
+            this.panel1.Size = new System.Drawing.Size(628, 65);
             this.panel1.TabIndex = 2;
             // 
             // bannerAds1
             // 
-            this.bannerAds1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.bannerAds1.ApplicationId = null;
             this.bannerAds1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.bannerAds1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bannerAds1.HeightAd = 0;
-            this.bannerAds1.Location = new System.Drawing.Point(251, 20);
+            this.bannerAds1.Location = new System.Drawing.Point(0, 0);
             this.bannerAds1.Margin = new System.Windows.Forms.Padding(0);
             this.bannerAds1.Name = "bannerAds1";
-            this.bannerAds1.Padding = new System.Windows.Forms.Padding(3);
-            this.bannerAds1.Size = new System.Drawing.Size(468, 60);
+            this.bannerAds1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bannerAds1.Size = new System.Drawing.Size(628, 65);
             this.bannerAds1.TabIndex = 1;
             this.bannerAds1.WidthAd = 0;
             // 
@@ -113,10 +108,9 @@
             // 
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(264, 144);
-            this.panelShadow.Margin = new System.Windows.Forms.Padding(4);
+            this.panelShadow.Location = new System.Drawing.Point(176, 96);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(942, 14);
+            this.panelShadow.Size = new System.Drawing.Size(628, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // lblTitleChildForm
@@ -124,10 +118,9 @@
             this.lblTitleChildForm.AutoSize = true;
             this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(74, 108);
-            this.lblTitleChildForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitleChildForm.Location = new System.Drawing.Point(49, 72);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(78, 29);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(49, 18);
             this.lblTitleChildForm.TabIndex = 4;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -140,9 +133,10 @@
             this.TextBar.Controls.Add(this.MinimizeButton);
             this.TextBar.Controls.Add(this.ExitButton);
             this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TextBar.Location = new System.Drawing.Point(264, 0);
+            this.TextBar.Location = new System.Drawing.Point(176, 0);
+            this.TextBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBar.Name = "TextBar";
-            this.TextBar.Size = new System.Drawing.Size(942, 144);
+            this.TextBar.Size = new System.Drawing.Size(628, 96);
             this.TextBar.TabIndex = 1;
             this.TextBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseMove);
             // 
@@ -150,10 +144,9 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::spt_0._1.Properties.Resources.pbl;
-            this.pictureBox1.Location = new System.Drawing.Point(861, 72);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -165,11 +158,10 @@
             this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.IconCurrentChildForm.IconColor = System.Drawing.Color.White;
             this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconCurrentChildForm.IconSize = 60;
-            this.IconCurrentChildForm.Location = new System.Drawing.Point(4, 86);
-            this.IconCurrentChildForm.Margin = new System.Windows.Forms.Padding(4);
+            this.IconCurrentChildForm.IconSize = 40;
+            this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
             this.IconCurrentChildForm.Name = "IconCurrentChildForm";
-            this.IconCurrentChildForm.Size = new System.Drawing.Size(60, 60);
+            this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
             this.IconCurrentChildForm.TabIndex = 3;
             this.IconCurrentChildForm.TabStop = false;
             // 
@@ -183,9 +175,10 @@
             this.MinimizeButton.IconColor = System.Drawing.Color.White;
             this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MinimizeButton.IconSize = 20;
-            this.MinimizeButton.Location = new System.Drawing.Point(885, 8);
+            this.MinimizeButton.Location = new System.Drawing.Point(590, 5);
+            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(24, 24);
+            this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
             this.MinimizeButton.TabIndex = 2;
             this.MinimizeButton.UseVisualStyleBackColor = true;
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
@@ -200,9 +193,10 @@
             this.ExitButton.IconColor = System.Drawing.Color.White;
             this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(912, 8);
+            this.ExitButton.Location = new System.Drawing.Point(608, 5);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(24, 24);
+            this.ExitButton.Size = new System.Drawing.Size(16, 16);
             this.ExitButton.TabIndex = 0;
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
@@ -213,8 +207,9 @@
             this.LogoBox.Controls.Add(this.MainLogo);
             this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogoBox.Location = new System.Drawing.Point(0, 0);
+            this.LogoBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogoBox.Name = "LogoBox";
-            this.LogoBox.Size = new System.Drawing.Size(264, 158);
+            this.LogoBox.Size = new System.Drawing.Size(176, 105);
             this.LogoBox.TabIndex = 1;
             // 
             // MainLogo
@@ -223,9 +218,8 @@
             this.MainLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
             this.MainLogo.Location = new System.Drawing.Point(0, 0);
-            this.MainLogo.Margin = new System.Windows.Forms.Padding(4);
             this.MainLogo.Name = "MainLogo";
-            this.MainLogo.Size = new System.Drawing.Size(264, 158);
+            this.MainLogo.Size = new System.Drawing.Size(176, 105);
             this.MainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MainLogo.TabIndex = 0;
             this.MainLogo.TabStop = false;
@@ -244,10 +238,11 @@
             this.ManualButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ManualButton.IconSize = 36;
             this.ManualButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ManualButton.Location = new System.Drawing.Point(0, 158);
+            this.ManualButton.Location = new System.Drawing.Point(0, 105);
+            this.ManualButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ManualButton.Name = "ManualButton";
-            this.ManualButton.Padding = new System.Windows.Forms.Padding(15, 0, 30, 0);
-            this.ManualButton.Size = new System.Drawing.Size(264, 90);
+            this.ManualButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.ManualButton.Size = new System.Drawing.Size(176, 60);
             this.ManualButton.TabIndex = 0;
             this.ManualButton.Text = "Manual";
             this.ManualButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -267,10 +262,11 @@
             this.EncrtpyButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.EncrtpyButton.IconSize = 36;
             this.EncrtpyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EncrtpyButton.Location = new System.Drawing.Point(0, 248);
+            this.EncrtpyButton.Location = new System.Drawing.Point(0, 165);
+            this.EncrtpyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EncrtpyButton.Name = "EncrtpyButton";
-            this.EncrtpyButton.Padding = new System.Windows.Forms.Padding(15, 0, 30, 0);
-            this.EncrtpyButton.Size = new System.Drawing.Size(264, 90);
+            this.EncrtpyButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.EncrtpyButton.Size = new System.Drawing.Size(176, 60);
             this.EncrtpyButton.TabIndex = 2;
             this.EncrtpyButton.Text = "Encryption";
             this.EncrtpyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -290,10 +286,11 @@
             this.CheckButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.CheckButton.IconSize = 36;
             this.CheckButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CheckButton.Location = new System.Drawing.Point(0, 338);
+            this.CheckButton.Location = new System.Drawing.Point(0, 225);
+            this.CheckButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckButton.Name = "CheckButton";
-            this.CheckButton.Padding = new System.Windows.Forms.Padding(15, 0, 30, 0);
-            this.CheckButton.Size = new System.Drawing.Size(264, 90);
+            this.CheckButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.CheckButton.Size = new System.Drawing.Size(176, 60);
             this.CheckButton.TabIndex = 3;
             this.CheckButton.Text = "Check Password";
             this.CheckButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -313,10 +310,11 @@
             this.SetButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SetButton.IconSize = 36;
             this.SetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SetButton.Location = new System.Drawing.Point(0, 630);
+            this.SetButton.Location = new System.Drawing.Point(0, 420);
+            this.SetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SetButton.Name = "SetButton";
-            this.SetButton.Padding = new System.Windows.Forms.Padding(15, 0, 30, 0);
-            this.SetButton.Size = new System.Drawing.Size(264, 90);
+            this.SetButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.SetButton.Size = new System.Drawing.Size(176, 60);
             this.SetButton.TabIndex = 4;
             this.SetButton.Text = "Setting";
             this.SetButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -333,16 +331,17 @@
             this.LeftMenu.Controls.Add(this.LogoBox);
             this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftMenu.Location = new System.Drawing.Point(0, 0);
+            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LeftMenu.Name = "LeftMenu";
-            this.LeftMenu.Size = new System.Drawing.Size(264, 720);
+            this.LeftMenu.Size = new System.Drawing.Size(176, 480);
             this.LeftMenu.TabIndex = 0;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(1206, 720);
+            this.ClientSize = new System.Drawing.Size(804, 480);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.TextBar);
@@ -350,6 +349,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
