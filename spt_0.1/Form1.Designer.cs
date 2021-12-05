@@ -47,6 +47,7 @@
             this.CheckButton = new FontAwesome.Sharp.IconButton();
             this.SetButton = new FontAwesome.Sharp.IconButton();
             this.LeftMenu = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.TextBar.SuspendLayout();
@@ -60,6 +61,7 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.panelDesktop.Controls.Add(this.label1);
             this.panelDesktop.Controls.Add(this.welcome);
             this.panelDesktop.Controls.Add(this.panel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -99,7 +101,7 @@
             this.bannerAds1.Location = new System.Drawing.Point(0, 0);
             this.bannerAds1.Margin = new System.Windows.Forms.Padding(0);
             this.bannerAds1.Name = "bannerAds1";
-            this.bannerAds1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bannerAds1.Padding = new System.Windows.Forms.Padding(2);
             this.bannerAds1.Size = new System.Drawing.Size(628, 65);
             this.bannerAds1.TabIndex = 1;
             this.bannerAds1.WidthAd = 0;
@@ -134,7 +136,7 @@
             this.TextBar.Controls.Add(this.ExitButton);
             this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.TextBar.Location = new System.Drawing.Point(176, 0);
-            this.TextBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
             this.TextBar.Name = "TextBar";
             this.TextBar.Size = new System.Drawing.Size(628, 96);
             this.TextBar.TabIndex = 1;
@@ -162,6 +164,7 @@
             this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
             this.IconCurrentChildForm.Name = "IconCurrentChildForm";
             this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
+            this.IconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.IconCurrentChildForm.TabIndex = 3;
             this.IconCurrentChildForm.TabStop = false;
             // 
@@ -176,7 +179,7 @@
             this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MinimizeButton.IconSize = 20;
             this.MinimizeButton.Location = new System.Drawing.Point(590, 5);
-            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
             this.MinimizeButton.TabIndex = 2;
@@ -194,7 +197,7 @@
             this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ExitButton.IconSize = 20;
             this.ExitButton.Location = new System.Drawing.Point(608, 5);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(16, 16);
             this.ExitButton.TabIndex = 0;
@@ -207,7 +210,7 @@
             this.LogoBox.Controls.Add(this.MainLogo);
             this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogoBox.Location = new System.Drawing.Point(0, 0);
-            this.LogoBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
             this.LogoBox.Name = "LogoBox";
             this.LogoBox.Size = new System.Drawing.Size(176, 105);
             this.LogoBox.TabIndex = 1;
@@ -239,7 +242,7 @@
             this.ManualButton.IconSize = 36;
             this.ManualButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ManualButton.Location = new System.Drawing.Point(0, 105);
-            this.ManualButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ManualButton.Margin = new System.Windows.Forms.Padding(2);
             this.ManualButton.Name = "ManualButton";
             this.ManualButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.ManualButton.Size = new System.Drawing.Size(176, 60);
@@ -263,7 +266,7 @@
             this.EncrtpyButton.IconSize = 36;
             this.EncrtpyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EncrtpyButton.Location = new System.Drawing.Point(0, 165);
-            this.EncrtpyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EncrtpyButton.Margin = new System.Windows.Forms.Padding(2);
             this.EncrtpyButton.Name = "EncrtpyButton";
             this.EncrtpyButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.EncrtpyButton.Size = new System.Drawing.Size(176, 60);
@@ -287,7 +290,7 @@
             this.CheckButton.IconSize = 36;
             this.CheckButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CheckButton.Location = new System.Drawing.Point(0, 225);
-            this.CheckButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CheckButton.Margin = new System.Windows.Forms.Padding(2);
             this.CheckButton.Name = "CheckButton";
             this.CheckButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.CheckButton.Size = new System.Drawing.Size(176, 60);
@@ -311,7 +314,7 @@
             this.SetButton.IconSize = 36;
             this.SetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SetButton.Location = new System.Drawing.Point(0, 420);
-            this.SetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SetButton.Margin = new System.Windows.Forms.Padding(2);
             this.SetButton.Name = "SetButton";
             this.SetButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.SetButton.Size = new System.Drawing.Size(176, 60);
@@ -331,10 +334,21 @@
             this.LeftMenu.Controls.Add(this.LogoBox);
             this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftMenu.Location = new System.Drawing.Point(0, 0);
-            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2);
             this.LeftMenu.Name = "LeftMenu";
             this.LeftMenu.Size = new System.Drawing.Size(176, 480);
             this.LeftMenu.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.label1.Location = new System.Drawing.Point(45, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(401, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "We are SIS4 working on the PBL project.";
             // 
             // MainForm
             // 
@@ -349,7 +363,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -386,6 +400,7 @@
         private FontAwesome.Sharp.IconButton CheckButton;
         private FontAwesome.Sharp.IconButton SetButton;
         private System.Windows.Forms.Panel LeftMenu;
+        private System.Windows.Forms.Label label1;
     }
 }
 

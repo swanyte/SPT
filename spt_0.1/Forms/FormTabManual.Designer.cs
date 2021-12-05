@@ -40,12 +40,15 @@ namespace spt_0._1.Forms
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabBack.SuspendLayout();
             this.tabMenuSelectBack.SuspendLayout();
             this.menuPanel.SuspendLayout();
             this.tabMain.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,6 +150,7 @@ namespace spt_0._1.Forms
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(241)))));
+            this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
@@ -157,6 +161,7 @@ namespace spt_0._1.Forms
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(254)))));
+            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -167,7 +172,6 @@ namespace spt_0._1.Forms
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(230)))));
-            this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -175,25 +179,40 @@ namespace spt_0._1.Forms
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(24, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(443, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "In Encryption page, you can ~~~~~~~~~~~~~~~~~~~~~~~~~~";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.label3.Location = new System.Drawing.Point(35, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(556, 50);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "On this page, you can encrypt the document.\r\nEnter the path of the file and press" +
+    " the encryption button.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.label5.Location = new System.Drawing.Point(35, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(556, 50);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "On this page, you can encrypt the document.\r\nEnter the path of the file and press" +
+    " the encryption button.";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.label1.Location = new System.Drawing.Point(35, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "In Encryption page, you can ~~~~";
+            this.label1.Size = new System.Drawing.Size(422, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "On this page, you can change the settings.";
             // 
             // FormTabManual
             // 
@@ -210,6 +229,10 @@ namespace spt_0._1.Forms
             this.tabMenuSelectBack.ResumeLayout(false);
             this.menuPanel.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
@@ -228,8 +251,9 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label btnSetting;
         private System.Windows.Forms.Label btnCheck;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
     }
 }
