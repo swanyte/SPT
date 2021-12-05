@@ -204,7 +204,7 @@
             // 
             // LogoBox
             // 
-            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.LogoBox.Controls.Add(this.MainLogo);
             this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogoBox.Location = new System.Drawing.Point(0, 0);
@@ -215,14 +215,12 @@
             // 
             // MainLogo
             // 
-            this.MainLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
             this.MainLogo.Location = new System.Drawing.Point(0, 0);
             this.MainLogo.Name = "MainLogo";
             this.MainLogo.Size = new System.Drawing.Size(176, 105);
+            this.MainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.MainLogo.TabIndex = 0;
             this.MainLogo.TabStop = false;
             this.MainLogo.Click += new System.EventHandler(this.MainLogo_Click);
@@ -363,6 +361,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
             this.LogoBox.ResumeLayout(false);
+            this.LogoBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
             this.LeftMenu.ResumeLayout(false);
             this.ResumeLayout(false);
