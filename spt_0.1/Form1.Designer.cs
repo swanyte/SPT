@@ -215,8 +215,10 @@
             // 
             // MainLogo
             // 
+            this.MainLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.MainLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
             this.MainLogo.Location = new System.Drawing.Point(0, 0);
             this.MainLogo.Name = "MainLogo";
