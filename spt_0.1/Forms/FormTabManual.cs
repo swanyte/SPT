@@ -33,8 +33,8 @@ namespace spt_0._1.Forms
 
             menw_colors = new List<Color>();
             menw_colors.Add(Color.FromArgb(252, 133, 174));
-            menw_colors.Add(Color.FromArgb(245, 199, 247));
-            menw_colors.Add(Color.FromArgb(253, 138, 114));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
 
             //시작 TabPage 설정
             tabMain.SelectedIndex = 0;

@@ -46,8 +46,9 @@ namespace spt_0._1.Forms
             this.barpanel.Controls.Add(this.MsgExitButton);
             this.barpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.barpanel.Location = new System.Drawing.Point(0, 0);
+            this.barpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.barpanel.Name = "barpanel";
-            this.barpanel.Size = new System.Drawing.Size(450, 21);
+            this.barpanel.Size = new System.Drawing.Size(675, 32);
             this.barpanel.TabIndex = 0;
             // 
             // MsgExitButton
@@ -60,10 +61,9 @@ namespace spt_0._1.Forms
             this.MsgExitButton.IconColor = System.Drawing.Color.White;
             this.MsgExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MsgExitButton.IconSize = 18;
-            this.MsgExitButton.Location = new System.Drawing.Point(432, 0);
-            this.MsgExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.MsgExitButton.Location = new System.Drawing.Point(648, 0);
             this.MsgExitButton.Name = "MsgExitButton";
-            this.MsgExitButton.Size = new System.Drawing.Size(18, 21);
+            this.MsgExitButton.Size = new System.Drawing.Size(27, 32);
             this.MsgExitButton.TabIndex = 5;
             this.MsgExitButton.UseVisualStyleBackColor = true;
             this.MsgExitButton.Click += new System.EventHandler(this.MsgExitButton_Click);
@@ -74,11 +74,12 @@ namespace spt_0._1.Forms
             this.ButtonYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
             this.ButtonYes.FlatAppearance.BorderSize = 0;
             this.ButtonYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonYes.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.ButtonYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ButtonYes.ForeColor = System.Drawing.Color.White;
-            this.ButtonYes.Location = new System.Drawing.Point(114, 105);
+            this.ButtonYes.Location = new System.Drawing.Point(171, 158);
+            this.ButtonYes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonYes.Name = "ButtonYes";
-            this.ButtonYes.Size = new System.Drawing.Size(75, 25);
+            this.ButtonYes.Size = new System.Drawing.Size(112, 38);
             this.ButtonYes.TabIndex = 3;
             this.ButtonYes.Text = "Yes";
             this.ButtonYes.UseVisualStyleBackColor = false;
@@ -88,11 +89,12 @@ namespace spt_0._1.Forms
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.label1.Location = new System.Drawing.Point(90, 59);
+            this.label1.Location = new System.Drawing.Point(135, 88);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 19);
+            this.label1.Size = new System.Drawing.Size(415, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Do you want to close the program?";
             // 
@@ -102,11 +104,12 @@ namespace spt_0._1.Forms
             this.ButtonNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.ButtonNo.FlatAppearance.BorderSize = 0;
             this.ButtonNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonNo.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.ButtonNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ButtonNo.ForeColor = System.Drawing.Color.White;
-            this.ButtonNo.Location = new System.Drawing.Point(267, 105);
+            this.ButtonNo.Location = new System.Drawing.Point(400, 158);
+            this.ButtonNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonNo.Name = "ButtonNo";
-            this.ButtonNo.Size = new System.Drawing.Size(75, 25);
+            this.ButtonNo.Size = new System.Drawing.Size(112, 38);
             this.ButtonNo.TabIndex = 4;
             this.ButtonNo.Text = "No";
             this.ButtonNo.UseVisualStyleBackColor = false;
@@ -116,35 +119,38 @@ namespace spt_0._1.Forms
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 170);
+            this.panel1.Location = new System.Drawing.Point(0, 255);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 2);
+            this.panel1.Size = new System.Drawing.Size(675, 3);
             this.panel1.TabIndex = 5;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 21);
+            this.panel2.Location = new System.Drawing.Point(0, 32);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 149);
+            this.panel2.Size = new System.Drawing.Size(3, 223);
             this.panel2.TabIndex = 6;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(448, 21);
+            this.panel3.Location = new System.Drawing.Point(672, 32);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 149);
+            this.panel3.Size = new System.Drawing.Size(3, 223);
             this.panel3.TabIndex = 7;
             // 
             // MessageExit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(450, 172);
+            this.ClientSize = new System.Drawing.Size(675, 258);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -153,6 +159,7 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.barpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MessageExit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageExit";

@@ -42,10 +42,10 @@ namespace spt_0._1
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(162, 168, 211);
+            public static Color color1 = Color.FromArgb(252, 133, 174);
             public static Color color2 = Color.FromArgb(252, 133, 174);
-            public static Color color3 = Color.FromArgb(245, 199, 247);
-            public static Color color4 = Color.FromArgb(253, 138, 114);
+            public static Color color3 = Color.FromArgb(252, 133, 174);
+            public static Color color4 = Color.FromArgb(252, 133, 174);
         }
 
         //Methods

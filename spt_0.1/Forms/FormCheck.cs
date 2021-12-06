@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Word = Microsoft.Office.Interop.Word;
 
 
 namespace spt_0._1.Forms
@@ -21,7 +22,8 @@ namespace spt_0._1.Forms
         string _pw = "sis4"; //계정 비밀번호
         string _connectionAddress = "";
         public string file_path = "";
-        string select_path = "";
+        public string select_path = "";
+        public string sel_pwd = "";
 
 
         public FormCheck()
@@ -75,6 +77,7 @@ namespace spt_0._1.Forms
 
                         //listView1.Items.Add(item);
                         richTextBox1.Text = table["file_pwd"].ToString();
+                        sel_pwd = richTextBox1.Text;
                     }
 
                     table.Close();
@@ -89,7 +92,6 @@ namespace spt_0._1.Forms
         private void openButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
-            String file_path = null;
             openFileDialog1.InitialDirectory = "C:\\";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -104,6 +106,11 @@ namespace spt_0._1.Forms
         private void iconButton2_Click_1(object sender, EventArgs e)
         {
             selectTable();
+
+
+            var WordApp = new Word.Application();
+            WordApp.Visible = true;
+            WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
         }
     }
 }
