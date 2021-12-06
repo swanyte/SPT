@@ -1181,3 +1181,5 @@ C:\Users\taeeun\pbl_spt\SPT\spt_0.1\obj\Debug\spt_0.1.csproj.CoreCompileInputs.c
 C:\Users\taeeun\pbl_spt\SPT\spt_0.1\obj\Debug\spt_0.1.csproj.CopyComplete
 C:\Users\taeeun\pbl_spt\SPT\spt_0.1\obj\Debug\spt_0.1.exe
 C:\Users\taeeun\pbl_spt\SPT\spt_0.1\obj\Debug\spt_0.1.pdb
+C:\Users\taeeun\pbl_spt\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.messageEncrypt.resources
+C:\Users\taeeun\pbl_spt\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.messageCheck.resources

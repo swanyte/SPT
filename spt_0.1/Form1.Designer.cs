@@ -67,7 +67,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.Location = new System.Drawing.Point(264, 158);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(942, 562);
             this.panelDesktop.TabIndex = 3;
@@ -102,7 +102,7 @@
             this.panel1.Controls.Add(this.bannerAds1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 464);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(942, 98);
             this.panel1.TabIndex = 2;
@@ -116,7 +116,7 @@
             this.bannerAds1.Location = new System.Drawing.Point(0, 0);
             this.bannerAds1.Margin = new System.Windows.Forms.Padding(0);
             this.bannerAds1.Name = "bannerAds1";
-            this.bannerAds1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bannerAds1.Padding = new System.Windows.Forms.Padding(3);
             this.bannerAds1.Size = new System.Drawing.Size(942, 98);
             this.bannerAds1.TabIndex = 1;
             this.bannerAds1.WidthAd = 0;
@@ -126,7 +126,7 @@
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(264, 144);
-            this.panelShadow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelShadow.Margin = new System.Windows.Forms.Padding(4);
             this.panelShadow.Name = "panelShadow";
             this.panelShadow.Size = new System.Drawing.Size(942, 14);
             this.panelShadow.TabIndex = 2;
@@ -163,7 +163,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::spt_0._1.Properties.Resources.pbl;
             this.pictureBox1.Location = new System.Drawing.Point(861, 72);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -179,7 +179,7 @@
             this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconCurrentChildForm.IconSize = 60;
             this.IconCurrentChildForm.Location = new System.Drawing.Point(4, 86);
-            this.IconCurrentChildForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IconCurrentChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.IconCurrentChildForm.Name = "IconCurrentChildForm";
             this.IconCurrentChildForm.Size = new System.Drawing.Size(60, 60);
             this.IconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -236,7 +236,7 @@
             this.MainLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
             this.MainLogo.Location = new System.Drawing.Point(0, 0);
-            this.MainLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainLogo.Margin = new System.Windows.Forms.Padding(4);
             this.MainLogo.Name = "MainLogo";
             this.MainLogo.Size = new System.Drawing.Size(264, 158);
             this.MainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

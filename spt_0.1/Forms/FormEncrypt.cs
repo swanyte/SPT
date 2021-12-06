@@ -15,6 +15,8 @@ namespace spt_0._1.Forms
 {
     public partial class FormEncrypt : Form
     {
+        private Form messageEncrypt;
+
 
         public string qpwd;
 
@@ -63,23 +65,39 @@ namespace spt_0._1.Forms
                 file_path = openFileDialog1.FileName;
                 textBox1.Text = file_path;
             }
-            var wordApp = new Word.Application();
-            wordApp.Visible = true;
-            wordApp.Documents.Open(file_path);
-            Word.Document doc = wordApp.ActiveDocument;
-
-            doc.Password = "123";
-
-            doc.Save();
-            wordApp.Quit();
         }
 
         private void encryptButton_Click(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-            GeneratePW(13, rnd);
-            insertDB();
+            try
+            {
+                Random rnd = new Random();
+                GeneratePW(13, rnd);
+
+                file_path = textBox1.Text;
+
+                var wordApp = new Word.Application();
+                wordApp.Visible = true;
+                wordApp.Documents.Open(file_path);
+                Word.Document doc = wordApp.ActiveDocument;
+
+                doc.Password = qpwd;
+
+                doc.Save();
+                wordApp.Quit();
+
+                insertDB();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            //MessageBox.Show("완료");
+            messageEncrypt = new Forms.messageEncrypt();
+            messageEncrypt.ShowDialog();
+
         }
+
 
         private void GeneratePW(int length, Random random)
         {
@@ -134,7 +152,7 @@ namespace spt_0._1.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

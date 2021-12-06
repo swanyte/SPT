@@ -23,7 +23,7 @@ namespace spt_0._1.Forms
         string _connectionAddress = "";
         public string file_path = "";
         public string select_path = "";
-        public string sel_pwd = "";
+        public string sel_pwd = "0";
 
 
         public FormCheck()
@@ -64,6 +64,7 @@ namespace spt_0._1.Forms
                     string selectQuery = string.Format("SELECT * FROM test WHERE file_path='{0}'", select_path);
 
                     MySqlCommand command = new MySqlCommand(selectQuery, mysql);
+
                     MySqlDataReader table = command.ExecuteReader();
 
                     //listView1.Items.Clear();
@@ -79,6 +80,7 @@ namespace spt_0._1.Forms
                         richTextBox1.Text = table["file_pwd"].ToString();
                         sel_pwd = richTextBox1.Text;
                     }
+
 
                     table.Close();
                 }
@@ -107,10 +109,17 @@ namespace spt_0._1.Forms
         {
             selectTable();
 
+            if (sel_pwd == "0")
+            {
+                richTextBox1.Text = "It's not encrypted.";
+            }
 
-            var WordApp = new Word.Application();
-            WordApp.Visible = true;
-            WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
+            else
+            {
+                var WordApp = new Word.Application();
+                WordApp.Visible = true;
+                WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
+            }
         }
     }
 }

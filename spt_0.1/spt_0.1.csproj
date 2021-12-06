@@ -134,6 +134,18 @@
     <Compile Include="Forms\FormTabManual.Designer.cs">
       <DependentUpon>FormTabManual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\messageCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\messageCheck.Designer.cs">
+      <DependentUpon>messageCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\messageEncrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\messageEncrypt.Designer.cs">
+      <DependentUpon>messageEncrypt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MessageExit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormTabManual.resx">
       <DependentUpon>FormTabManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\messageCheck.resx">
+      <DependentUpon>messageCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\messageEncrypt.resx">
+      <DependentUpon>messageEncrypt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageExit.resx">
       <DependentUpon>MessageExit.cs</DependentUpon>
