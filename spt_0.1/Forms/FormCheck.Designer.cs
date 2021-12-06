@@ -48,20 +48,21 @@ namespace spt_0._1.Forms
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(48, 122);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(38, 98);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(430, 22);
+            this.textBox1.Size = new System.Drawing.Size(344, 18);
             this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.label1.Location = new System.Drawing.Point(10, 237);
+            this.label1.Location = new System.Drawing.Point(8, 190);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 35);
+            this.label1.Size = new System.Drawing.Size(146, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Password";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -72,12 +73,12 @@ namespace spt_0._1.Forms
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.richTextBox1.Location = new System.Drawing.Point(48, 277);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(38, 222);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Multiline = false;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(430, 22);
+            this.richTextBox1.Size = new System.Drawing.Size(344, 18);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -85,9 +86,10 @@ namespace spt_0._1.Forms
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.label3.Location = new System.Drawing.Point(10, 68);
+            this.label3.Location = new System.Drawing.Point(8, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 35);
+            this.label3.Size = new System.Drawing.Size(146, 28);
             this.label3.TabIndex = 7;
             this.label3.Text = "Select File";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -103,9 +105,10 @@ namespace spt_0._1.Forms
             this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 24;
-            this.iconButton2.Location = new System.Drawing.Point(495, 277);
+            this.iconButton2.Location = new System.Drawing.Point(396, 216);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(200, 37);
+            this.iconButton2.Size = new System.Drawing.Size(160, 30);
             this.iconButton2.TabIndex = 9;
             this.iconButton2.Text = "Check the Password";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -123,9 +126,10 @@ namespace spt_0._1.Forms
             this.openButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.openButton.IconSize = 24;
-            this.openButton.Location = new System.Drawing.Point(497, 112);
+            this.openButton.Location = new System.Drawing.Point(398, 90);
+            this.openButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(82, 37);
+            this.openButton.Size = new System.Drawing.Size(66, 30);
             this.openButton.TabIndex = 8;
             this.openButton.Text = "Open";
             this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,10 +138,10 @@ namespace spt_0._1.Forms
             // 
             // FormCheck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(785, 393);
+            this.ClientSize = new System.Drawing.Size(628, 314);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.label3);
@@ -145,6 +149,7 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormCheck";
             this.Text = "FormCheck";
             this.Load += new System.EventHandler(this.FormCheck_Load);

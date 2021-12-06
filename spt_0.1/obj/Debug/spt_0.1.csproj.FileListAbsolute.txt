@@ -1235,3 +1235,5 @@ C:\Users\rlaco\Downloads\SPT-main\SPT-main\spt_0.1\obj\Debug\spt_0.1.csproj.Core
 C:\Users\rlaco\Downloads\SPT-main\SPT-main\spt_0.1\obj\Debug\spt_0.1.csproj.CopyComplete
 C:\Users\rlaco\Downloads\SPT-main\SPT-main\spt_0.1\obj\Debug\spt_0.1.exe
 C:\Users\rlaco\Downloads\SPT-main\SPT-main\spt_0.1\obj\Debug\spt_0.1.pdb
+E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.messageCheck.resources
+E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.messageEncrypt.resources
