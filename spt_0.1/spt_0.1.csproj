@@ -134,6 +134,12 @@
     <Compile Include="Forms\FormTabManual.Designer.cs">
       <DependentUpon>FormTabManual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\messageCheck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,18 @@
     </Compile>
     <Compile Include="Forms\RJControls\RJButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Sgin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sgin.Designer.cs">
+      <DependentUpon>Sgin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sign2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sign2.Designer.cs">
+      <DependentUpon>Sign2.cs</DependentUpon>
     </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
@@ -178,6 +196,9 @@
     <EmbeddedResource Include="Forms\FormTabManual.resx">
       <DependentUpon>FormTabManual.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\messageCheck.resx">
       <DependentUpon>messageCheck.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageExit.resx">
       <DependentUpon>MessageExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sgin.resx">
+      <DependentUpon>Sgin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sign2.resx">
+      <DependentUpon>Sign2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>

@@ -20,6 +20,8 @@ namespace spt_0._1
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private Form messageExit;
+        private Form test;
+
 
         //Constructor
         public MainForm()
@@ -231,6 +233,12 @@ namespace spt_0._1
         {
             ReleaseCapture();
             SendMessage(this.Handle, SYSTEMCOMMAND, SC_DRAGMOVE, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            test = new Forms.Login();
+            test.Show();
         }
     }
 }
