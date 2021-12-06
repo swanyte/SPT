@@ -26,5 +26,10 @@ namespace spt_0._1.Forms
         {
             this.Close();
         }
+
+        private void messageCheck_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

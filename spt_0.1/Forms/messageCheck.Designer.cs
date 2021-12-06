@@ -41,9 +41,8 @@
             this.barpanel.Controls.Add(this.MsgExitButton);
             this.barpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.barpanel.Location = new System.Drawing.Point(0, 0);
-            this.barpanel.Margin = new System.Windows.Forms.Padding(4);
             this.barpanel.Name = "barpanel";
-            this.barpanel.Size = new System.Drawing.Size(646, 32);
+            this.barpanel.Size = new System.Drawing.Size(517, 27);
             this.barpanel.TabIndex = 2;
             // 
             // MsgExitButton
@@ -56,9 +55,10 @@
             this.MsgExitButton.IconColor = System.Drawing.Color.White;
             this.MsgExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MsgExitButton.IconSize = 18;
-            this.MsgExitButton.Location = new System.Drawing.Point(619, 0);
+            this.MsgExitButton.Location = new System.Drawing.Point(495, 0);
+            this.MsgExitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MsgExitButton.Name = "MsgExitButton";
-            this.MsgExitButton.Size = new System.Drawing.Size(27, 32);
+            this.MsgExitButton.Size = new System.Drawing.Size(22, 27);
             this.MsgExitButton.TabIndex = 5;
             this.MsgExitButton.UseVisualStyleBackColor = true;
             this.MsgExitButton.Click += new System.EventHandler(this.MsgExitButton_Click);
@@ -71,10 +71,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.label1.Location = new System.Drawing.Point(55, 97);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(44, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(543, 29);
+            this.label1.Size = new System.Drawing.Size(448, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "The word file has been opened automatically!";
             // 
@@ -86,10 +85,9 @@
             this.ButtonYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ButtonYes.ForeColor = System.Drawing.Color.White;
-            this.ButtonYes.Location = new System.Drawing.Point(260, 170);
-            this.ButtonYes.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonYes.Location = new System.Drawing.Point(208, 142);
             this.ButtonYes.Name = "ButtonYes";
-            this.ButtonYes.Size = new System.Drawing.Size(112, 38);
+            this.ButtonYes.Size = new System.Drawing.Size(90, 32);
             this.ButtonYes.TabIndex = 8;
             this.ButtonYes.Text = "Ok";
             this.ButtonYes.UseVisualStyleBackColor = false;
@@ -97,17 +95,19 @@
             // 
             // messageCheck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(646, 258);
+            this.ClientSize = new System.Drawing.Size(517, 215);
             this.Controls.Add(this.ButtonYes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.barpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "messageCheck";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "messageCheck";
+            this.Load += new System.EventHandler(this.messageCheck_Load);
             this.barpanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

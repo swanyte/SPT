@@ -15,6 +15,8 @@ namespace spt_0._1.Forms
 {
     public partial class FormCheck : Form
     {
+        private Form messageCheck;
+
         string _server = ""; //DB 서버 주소, 로컬일 경우 localhost
         int _port = 3306; //DB 서버 포트
         string _database = "test"; //DB 이름
@@ -89,6 +91,7 @@ namespace spt_0._1.Forms
             {
                 MessageBox.Show(exc.Message);
             }
+            
         }
 
         private void openButton_Click(object sender, EventArgs e)
@@ -119,6 +122,9 @@ namespace spt_0._1.Forms
                 var WordApp = new Word.Application();
                 WordApp.Visible = true;
                 WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
+
+                messageCheck = new Forms.messageCheck();
+                messageCheck.ShowDialog();
             }
         }
     }

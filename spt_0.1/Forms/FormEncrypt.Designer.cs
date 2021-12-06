@@ -56,10 +56,10 @@ namespace spt_0._1.Forms
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
-            this.checkBox1.Location = new System.Drawing.Point(58, 183);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.checkBox1.Location = new System.Drawing.Point(48, 152);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 26);
+            this.checkBox1.Size = new System.Drawing.Size(112, 22);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "encrypted file";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -70,22 +70,20 @@ namespace spt_0._1.Forms
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(58, 146);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox1.Location = new System.Drawing.Point(48, 122);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(516, 27);
+            this.textBox1.Size = new System.Drawing.Size(430, 22);
             this.textBox1.TabIndex = 10;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.label3.Location = new System.Drawing.Point(12, 82);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(10, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(219, 42);
+            this.label3.Size = new System.Drawing.Size(182, 35);
             this.label3.TabIndex = 11;
             this.label3.Text = "Select File";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -94,10 +92,9 @@ namespace spt_0._1.Forms
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.label1.Location = new System.Drawing.Point(12, 250);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(10, 208);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 42);
+            this.label1.Size = new System.Drawing.Size(182, 35);
             this.label1.TabIndex = 13;
             this.label1.Text = "Encrypt File";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -113,10 +110,9 @@ namespace spt_0._1.Forms
             this.encryptButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.encryptButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.encryptButton.IconSize = 24;
-            this.encryptButton.Location = new System.Drawing.Point(58, 316);
-            this.encryptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.encryptButton.Location = new System.Drawing.Point(48, 263);
             this.encryptButton.Name = "encryptButton";
-            this.encryptButton.Size = new System.Drawing.Size(150, 60);
+            this.encryptButton.Size = new System.Drawing.Size(125, 50);
             this.encryptButton.TabIndex = 12;
             this.encryptButton.Text = "Encrypt";
             this.encryptButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,10 +130,9 @@ namespace spt_0._1.Forms
             this.openButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.openButton.IconSize = 24;
-            this.openButton.Location = new System.Drawing.Point(596, 135);
-            this.openButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.openButton.Location = new System.Drawing.Point(497, 112);
             this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(98, 45);
+            this.openButton.Size = new System.Drawing.Size(82, 37);
             this.openButton.TabIndex = 9;
             this.openButton.Text = "Open";
             this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -146,10 +141,10 @@ namespace spt_0._1.Forms
             // 
             // FormEncrypt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(942, 472);
+            this.ClientSize = new System.Drawing.Size(785, 393);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.encryptButton);
             this.Controls.Add(this.label3);
@@ -157,7 +152,6 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.checkBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormEncrypt";
             this.Text = "FormEncrypt";
             this.Load += new System.EventHandler(this.FormEncrypt_Load);
