@@ -1,7 +1,7 @@
 ﻿
 namespace spt_0._1.Forms
 {
-    partial class Sgin
+    partial class Sign
     {
         /// <summary>
         /// Required designer variable.
@@ -39,8 +39,8 @@ namespace spt_0._1.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.rjButton1 = new spt_0._1.Forms.RJButton();
-            this.openButton = new FontAwesome.Sharp.IconButton();
+            this.NextSign2Button = new spt_0._1.Forms.RJButton();
+            this.BackButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // textBox1
@@ -80,6 +80,7 @@ namespace spt_0._1.Forms
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox2.Location = new System.Drawing.Point(64, 206);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(215, 14);
             this.textBox2.TabIndex = 23;
             // 
@@ -110,6 +111,7 @@ namespace spt_0._1.Forms
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox3.Location = new System.Drawing.Point(64, 266);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(215, 14);
             this.textBox3.TabIndex = 26;
             // 
@@ -144,53 +146,55 @@ namespace spt_0._1.Forms
             this.label4.TabIndex = 27;
             this.label4.Text = "Sign up";
             // 
-            // rjButton1
+            // NextSign2Button
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(64, 311);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(215, 35);
-            this.rjButton1.TabIndex = 29;
-            this.rjButton1.Text = "Next";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.NextSign2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.NextSign2Button.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.NextSign2Button.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.NextSign2Button.BorderRadius = 10;
+            this.NextSign2Button.BorderSize = 0;
+            this.NextSign2Button.FlatAppearance.BorderSize = 0;
+            this.NextSign2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NextSign2Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.NextSign2Button.ForeColor = System.Drawing.Color.White;
+            this.NextSign2Button.Location = new System.Drawing.Point(64, 311);
+            this.NextSign2Button.Name = "NextSign2Button";
+            this.NextSign2Button.Size = new System.Drawing.Size(215, 35);
+            this.NextSign2Button.TabIndex = 29;
+            this.NextSign2Button.Text = "Next";
+            this.NextSign2Button.TextColor = System.Drawing.Color.White;
+            this.NextSign2Button.UseVisualStyleBackColor = false;
+            this.NextSign2Button.Click += new System.EventHandler(this.NextSign2Button_Click);
             // 
-            // openButton
+            // BackButton
             // 
-            this.openButton.BackColor = System.Drawing.Color.Transparent;
-            this.openButton.FlatAppearance.BorderSize = 0;
-            this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
-            this.openButton.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
-            this.openButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
-            this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.openButton.IconSize = 24;
-            this.openButton.Location = new System.Drawing.Point(0, -1);
-            this.openButton.Margin = new System.Windows.Forms.Padding(2);
-            this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(122, 30);
-            this.openButton.TabIndex = 28;
-            this.openButton.Text = "Back to previous";
-            this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.openButton.UseVisualStyleBackColor = false;
+            this.BackButton.BackColor = System.Drawing.Color.Transparent;
+            this.BackButton.FlatAppearance.BorderSize = 0;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.BackButton.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.BackButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.BackButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BackButton.IconSize = 24;
+            this.BackButton.Location = new System.Drawing.Point(0, -1);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(122, 30);
+            this.BackButton.TabIndex = 28;
+            this.BackButton.Text = "Back to previous";
+            this.BackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // Sgin
+            // Sign
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(341, 378);
-            this.Controls.Add(this.rjButton1);
-            this.Controls.Add(this.openButton);
+            this.Controls.Add(this.NextSign2Button);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
@@ -202,7 +206,8 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Sgin";
+            this.Name = "Sign";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sgin";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,7 +226,7 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
-        private FontAwesome.Sharp.IconButton openButton;
-        private RJButton rjButton1;
+        private FontAwesome.Sharp.IconButton BackButton;
+        private RJButton NextSign2Button;
     }
 }

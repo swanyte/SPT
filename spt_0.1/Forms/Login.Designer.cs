@@ -32,7 +32,6 @@ namespace spt_0._1.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.rjButton1 = new spt_0._1.Forms.RJButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@ namespace spt_0._1.Forms
             this.openButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ExitButton = new FontAwesome.Sharp.IconButton();
+            this.LoginButton = new spt_0._1.Forms.RJButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +53,7 @@ namespace spt_0._1.Forms
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.rjButton1);
+            this.panel1.Controls.Add(this.LoginButton);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
@@ -102,25 +102,6 @@ namespace spt_0._1.Forms
             this.label3.Text = "Forgot your password?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(61, 293);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(215, 35);
-            this.rjButton1.TabIndex = 19;
-            this.rjButton1.Text = "Login";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
@@ -128,6 +109,7 @@ namespace spt_0._1.Forms
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox2.Location = new System.Drawing.Point(61, 270);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(215, 14);
             this.textBox2.TabIndex = 18;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -235,12 +217,33 @@ namespace spt_0._1.Forms
             this.ExitButton.IconColor = System.Drawing.Color.White;
             this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(788, 1);
+            this.ExitButton.Location = new System.Drawing.Point(787, 2);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(16, 16);
             this.ExitButton.TabIndex = 1;
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.LoginButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.LoginButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.LoginButton.BorderRadius = 10;
+            this.LoginButton.BorderSize = 0;
+            this.LoginButton.FlatAppearance.BorderSize = 0;
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.LoginButton.ForeColor = System.Drawing.Color.White;
+            this.LoginButton.Location = new System.Drawing.Point(61, 293);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(215, 35);
+            this.LoginButton.TabIndex = 19;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.TextColor = System.Drawing.Color.White;
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // Login
             // 
@@ -252,6 +255,7 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -273,7 +277,7 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton ExitButton;
-        private RJButton rjButton1;
+        private RJButton LoginButton;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton iconButton1;
     }

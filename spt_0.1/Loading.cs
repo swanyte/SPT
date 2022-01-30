@@ -44,8 +44,8 @@ namespace spt_0._1
             if (ProgressBar.Value == 100)
             {
                 timer1.Enabled = false;
-                MainForm main_form = new MainForm();
-                main_form.Show();
+                Forms.Login login_form = new Forms.Login();
+                login_form.Show();
                 this.Hide();
             }
             else

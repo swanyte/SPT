@@ -13,6 +13,8 @@ namespace spt_0._1.Forms
     public partial class Login : Form
     {
         private Form sign1;
+        private Form form1;
+
 
         public Login()
         {
@@ -51,8 +53,28 @@ namespace spt_0._1.Forms
 
         private void openButton_Click(object sender, EventArgs e)
         {
-            sign1 = new Forms.Sign2();
+            sign1 = new Forms.Sign();
             sign1.Show();
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            form1 = new MainForm();
+            if (!String.IsNullOrWhiteSpace(textBox1.Text) && !String.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                form1.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please enter your Company ID and password");
+            }
+            
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

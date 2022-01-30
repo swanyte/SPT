@@ -161,11 +161,11 @@
     <Compile Include="Forms\RJControls\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\Sgin.cs">
+    <Compile Include="Forms\Sign.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Sgin.Designer.cs">
-      <DependentUpon>Sgin.cs</DependentUpon>
+      <DependentUpon>Sign.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Sign2.cs">
       <SubType>Form</SubType>
@@ -209,7 +209,7 @@
       <DependentUpon>MessageExit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Sgin.resx">
-      <DependentUpon>Sgin.cs</DependentUpon>
+      <DependentUpon>Sign.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Sign2.resx">
       <DependentUpon>Sign2.cs</DependentUpon>

@@ -20,7 +20,6 @@ namespace spt_0._1
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private Form messageExit;
-        private Form test;
 
 
         //Constructor
@@ -91,6 +90,8 @@ namespace spt_0._1
             }
         }
 
+
+
         private void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
@@ -99,6 +100,7 @@ namespace spt_0._1
                 currentChildForm.Close();
             }
             currentChildForm = childForm;
+            childForm.Owner = this;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -235,10 +237,5 @@ namespace spt_0._1
             SendMessage(this.Handle, SYSTEMCOMMAND, SC_DRAGMOVE, 0);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            test = new Forms.Login();
-            test.Show();
-        }
     }
 }

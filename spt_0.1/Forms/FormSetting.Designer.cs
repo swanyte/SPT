@@ -36,7 +36,7 @@ namespace spt_0._1.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.rjButton1 = new spt_0._1.Forms.RJButton();
+            this.LogoutButton = new spt_0._1.Forms.RJButton();
             this.rjButton2 = new spt_0._1.Forms.RJButton();
             this.rjButton3 = new spt_0._1.Forms.RJButton();
             this.SuspendLayout();
@@ -125,24 +125,25 @@ namespace spt_0._1.Forms
             this.label7.Text = "SPT";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // rjButton1
+            // LogoutButton
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(388, 145);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(215, 35);
-            this.rjButton1.TabIndex = 20;
-            this.rjButton1.Text = "Logout";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.LogoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.LogoutButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.LogoutButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.LogoutButton.BorderRadius = 10;
+            this.LogoutButton.BorderSize = 0;
+            this.LogoutButton.FlatAppearance.BorderSize = 0;
+            this.LogoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.LogoutButton.ForeColor = System.Drawing.Color.White;
+            this.LogoutButton.Location = new System.Drawing.Point(388, 145);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Size = new System.Drawing.Size(215, 35);
+            this.LogoutButton.TabIndex = 20;
+            this.LogoutButton.Text = "Logout";
+            this.LogoutButton.TextColor = System.Drawing.Color.White;
+            this.LogoutButton.UseVisualStyleBackColor = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // rjButton2
             // 
@@ -190,7 +191,7 @@ namespace spt_0._1.Forms
             this.ClientSize = new System.Drawing.Size(628, 315);
             this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -214,7 +215,7 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private RJButton rjButton1;
+        private RJButton LogoutButton;
         private RJButton rjButton2;
         private RJButton rjButton3;
     }

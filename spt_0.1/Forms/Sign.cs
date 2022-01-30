@@ -10,29 +10,25 @@ using System.Windows.Forms;
 
 namespace spt_0._1.Forms
 {
-    public partial class Sign2 : Form
+    public partial class Sign : Form
     {
-        private Form sign;
+        private Form sign2;
 
-        public Sign2()
+        public Sign()
         {
             InitializeComponent();
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            sign = new Sign();
-            sign.Show();
             this.Close();
         }
 
-        private void SignInButton_Click(object sender, EventArgs e)
+        private void NextSign2Button_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                this.Close();
-            }
-            
+            sign2 = new Sign2();
+            sign2.Show();
+            this.Close();
         }
     }
 }
