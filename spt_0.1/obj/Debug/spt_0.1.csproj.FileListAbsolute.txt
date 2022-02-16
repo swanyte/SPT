@@ -938,7 +938,6 @@ E:\김태은\대학\3-2\PBL\SPT\spt_0.1\bin\Debug\FontAwesome.Sharp.dll
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\bin\Debug\WinFormAnimation.dll
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\bin\Debug\CircularProgressBar.xml
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\bin\Debug\WinFormAnimation.xml
-E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0.1.csproj.AssemblyReference.cache
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.MainForm.resources
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.FormCheck.resources
 E:\김태은\대학\3-2\PBL\SPT\spt_0.1\obj\Debug\spt_0._1.Forms.FormEncrypt.resources

@@ -32,10 +32,10 @@ namespace spt_0._1.Forms
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.password1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.password2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,16 +73,16 @@ namespace spt_0._1.Forms
             this.panel3.Size = new System.Drawing.Size(215, 2);
             this.panel3.TabIndex = 18;
             // 
-            // textBox2
+            // password1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox2.Location = new System.Drawing.Point(64, 206);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(215, 14);
-            this.textBox2.TabIndex = 23;
+            this.password1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.password1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.password1.Location = new System.Drawing.Point(64, 206);
+            this.password1.Name = "password1";
+            this.password1.PasswordChar = '*';
+            this.password1.Size = new System.Drawing.Size(215, 14);
+            this.password1.TabIndex = 23;
             // 
             // label2
             // 
@@ -104,16 +104,16 @@ namespace spt_0._1.Forms
             this.panel1.Size = new System.Drawing.Size(215, 2);
             this.panel1.TabIndex = 21;
             // 
-            // textBox3
+            // password2
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox3.Location = new System.Drawing.Point(64, 266);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(215, 14);
-            this.textBox3.TabIndex = 26;
+            this.password2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.password2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.password2.Location = new System.Drawing.Point(64, 266);
+            this.password2.Name = "password2";
+            this.password2.PasswordChar = '*';
+            this.password2.Size = new System.Drawing.Size(215, 14);
+            this.password2.TabIndex = 26;
             // 
             // label3
             // 
@@ -196,10 +196,10 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.NextSign2Button);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.password2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.password1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
@@ -219,10 +219,10 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox password1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox password2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;

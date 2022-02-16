@@ -26,9 +26,12 @@ namespace spt_0._1.Forms
 
         private void NextSign2Button_Click(object sender, EventArgs e)
         {
-            sign2 = new Sign2();
-            sign2.Show();
-            this.Close();
+            if(password1.Text == password2.Text && password1.Text != "")
+            {
+                sign2 = new Sign2();
+                sign2.Show();
+                this.Close();
+            }            
         }
     }
 }
