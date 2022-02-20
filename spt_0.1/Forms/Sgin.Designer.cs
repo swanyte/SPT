@@ -29,7 +29,7 @@ namespace spt_0._1.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.password1 = new System.Windows.Forms.TextBox();
@@ -43,15 +43,15 @@ namespace spt_0._1.Forms
             this.BackButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
-            // textBox1
+            // comID
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(64, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 14);
-            this.textBox1.TabIndex = 20;
+            this.comID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.comID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.comID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.comID.Location = new System.Drawing.Point(64, 146);
+            this.comID.Name = "comID";
+            this.comID.Size = new System.Drawing.Size(215, 14);
+            this.comID.TabIndex = 20;
             // 
             // label1
             // 
@@ -202,13 +202,14 @@ namespace spt_0._1.Forms
             this.Controls.Add(this.password1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sign";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sgin";
+            this.Load += new System.EventHandler(this.Sign_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,7 +217,7 @@ namespace spt_0._1.Forms
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox comID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox password1;

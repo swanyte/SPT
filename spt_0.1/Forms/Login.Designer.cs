@@ -32,8 +32,9 @@ namespace spt_0._1.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LoginButton = new spt_0._1.Forms.RJButton();
+            this.comPW = new System.Windows.Forms.TextBox();
+            this.comID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,7 +43,6 @@ namespace spt_0._1.Forms
             this.openButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ExitButton = new FontAwesome.Sharp.IconButton();
-            this.LoginButton = new spt_0._1.Forms.RJButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,8 +54,8 @@ namespace spt_0._1.Forms
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.LoginButton);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.comPW);
+            this.panel1.Controls.Add(this.comID);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel2);
@@ -67,7 +67,6 @@ namespace spt_0._1.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(341, 378);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // iconButton1
             // 
@@ -100,30 +99,47 @@ namespace spt_0._1.Forms
             this.label3.Size = new System.Drawing.Size(131, 15);
             this.label3.TabIndex = 20;
             this.label3.Text = "Forgot your password?";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // LoginButton
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox2.Location = new System.Drawing.Point(61, 270);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(215, 14);
-            this.textBox2.TabIndex = 18;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.LoginButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.LoginButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.LoginButton.BorderRadius = 10;
+            this.LoginButton.BorderSize = 0;
+            this.LoginButton.FlatAppearance.BorderSize = 0;
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.LoginButton.ForeColor = System.Drawing.Color.White;
+            this.LoginButton.Location = new System.Drawing.Point(61, 293);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(215, 35);
+            this.LoginButton.TabIndex = 19;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.TextColor = System.Drawing.Color.White;
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
-            // textBox1
+            // comPW
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(61, 200);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 14);
-            this.textBox1.TabIndex = 17;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.comPW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.comPW.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.comPW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.comPW.Location = new System.Drawing.Point(61, 270);
+            this.comPW.Name = "comPW";
+            this.comPW.PasswordChar = '*';
+            this.comPW.Size = new System.Drawing.Size(215, 14);
+            this.comPW.TabIndex = 18;
+            // 
+            // comID
+            // 
+            this.comID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.comID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.comID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.comID.Location = new System.Drawing.Point(61, 200);
+            this.comID.Name = "comID";
+            this.comID.Size = new System.Drawing.Size(215, 14);
+            this.comID.TabIndex = 17;
             // 
             // label2
             // 
@@ -135,7 +151,6 @@ namespace spt_0._1.Forms
             this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 16;
             this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -165,7 +180,6 @@ namespace spt_0._1.Forms
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(215, 2);
             this.panel4.TabIndex = 13;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel3
             // 
@@ -225,26 +239,6 @@ namespace spt_0._1.Forms
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // LoginButton
-            // 
-            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.LoginButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
-            this.LoginButton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.LoginButton.BorderRadius = 10;
-            this.LoginButton.BorderSize = 0;
-            this.LoginButton.FlatAppearance.BorderSize = 0;
-            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Location = new System.Drawing.Point(61, 293);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(215, 35);
-            this.LoginButton.TabIndex = 19;
-            this.LoginButton.Text = "Login";
-            this.LoginButton.TextColor = System.Drawing.Color.White;
-            this.LoginButton.UseVisualStyleBackColor = false;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -257,6 +251,7 @@ namespace spt_0._1.Forms
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -271,8 +266,8 @@ namespace spt_0._1.Forms
         private FontAwesome.Sharp.IconButton openButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox comPW;
+        private System.Windows.Forms.TextBox comID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;

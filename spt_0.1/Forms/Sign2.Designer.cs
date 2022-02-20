@@ -31,13 +31,13 @@ namespace spt_0._1.Forms
         {
             this.SignInButton = new spt_0._1.Forms.RJButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cloudPlatform = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.folderName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BackButton = new FontAwesome.Sharp.IconButton();
@@ -76,15 +76,15 @@ namespace spt_0._1.Forms
             this.label4.TabIndex = 33;
             this.label4.Text = "Sign up";
             // 
-            // textBox1
+            // cloudPlatform
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(63, 147);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 14);
-            this.textBox1.TabIndex = 32;
+            this.cloudPlatform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.cloudPlatform.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.cloudPlatform.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cloudPlatform.Location = new System.Drawing.Point(63, 147);
+            this.cloudPlatform.Name = "cloudPlatform";
+            this.cloudPlatform.Size = new System.Drawing.Size(215, 14);
+            this.cloudPlatform.TabIndex = 32;
             // 
             // label1
             // 
@@ -139,15 +139,15 @@ namespace spt_0._1.Forms
             this.panel1.Size = new System.Drawing.Size(215, 2);
             this.panel1.TabIndex = 33;
             // 
-            // textBox3
+            // folderName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox3.Location = new System.Drawing.Point(64, 206);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 14);
-            this.textBox3.TabIndex = 38;
+            this.folderName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.folderName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.folderName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.folderName.Location = new System.Drawing.Point(64, 206);
+            this.folderName.Name = "folderName";
+            this.folderName.Size = new System.Drawing.Size(215, 14);
+            this.folderName.TabIndex = 38;
             // 
             // label3
             // 
@@ -214,19 +214,20 @@ namespace spt_0._1.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(341, 378);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.folderName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SignInButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cloudPlatform);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sign2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign2";
+            this.Load += new System.EventHandler(this.Sign2_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -239,13 +240,13 @@ namespace spt_0._1.Forms
         private RJButton SignInButton;
         private FontAwesome.Sharp.IconButton BackButton;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cloudPlatform;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox folderName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox checkBox1;
