@@ -34,7 +34,7 @@ namespace spt_0._1.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.checkButton = new FontAwesome.Sharp.IconButton();
             this.openButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@ namespace spt_0._1.Forms
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(38, 98);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(344, 18);
@@ -74,7 +74,7 @@ namespace spt_0._1.Forms
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.richTextBox1.Location = new System.Drawing.Point(38, 222);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Multiline = false;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
@@ -94,26 +94,26 @@ namespace spt_0._1.Forms
             this.label3.Text = "Select File";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // iconButton2
+            // checkButton
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CheckSquare;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 24;
-            this.iconButton2.Location = new System.Drawing.Point(396, 216);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(160, 30);
-            this.iconButton2.TabIndex = 9;
-            this.iconButton2.Text = "Check the Password";
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click_1);
+            this.checkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(133)))), ((int)(((byte)(174)))));
+            this.checkButton.FlatAppearance.BorderSize = 0;
+            this.checkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.checkButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.checkButton.IconChar = FontAwesome.Sharp.IconChar.CheckSquare;
+            this.checkButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.checkButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.checkButton.IconSize = 24;
+            this.checkButton.Location = new System.Drawing.Point(396, 216);
+            this.checkButton.Margin = new System.Windows.Forms.Padding(2);
+            this.checkButton.Name = "checkButton";
+            this.checkButton.Size = new System.Drawing.Size(160, 30);
+            this.checkButton.TabIndex = 9;
+            this.checkButton.Text = "Check the Password";
+            this.checkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkButton.UseVisualStyleBackColor = false;
+            this.checkButton.Click += new System.EventHandler(this.iconButton2_Click_1);
             // 
             // openButton
             // 
@@ -127,7 +127,7 @@ namespace spt_0._1.Forms
             this.openButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.openButton.IconSize = 24;
             this.openButton.Location = new System.Drawing.Point(398, 90);
-            this.openButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openButton.Margin = new System.Windows.Forms.Padding(2);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(66, 30);
             this.openButton.TabIndex = 8;
@@ -142,14 +142,14 @@ namespace spt_0._1.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(628, 314);
-            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.checkButton);
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormCheck";
             this.Text = "FormCheck";
             this.Load += new System.EventHandler(this.FormCheck_Load);
@@ -166,6 +166,6 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton openButton;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton checkButton;
     }
 }

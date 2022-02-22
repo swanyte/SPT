@@ -127,7 +127,7 @@ namespace spt_0._1.Forms
         private void AddFile(string path, string pw)
         {
             string id = Login.ID;
-            DocumentReference DOC = db.Collection("Join").Document(id).Collection("File").Document();
+            DocumentReference DOC = db.Collection("Join").Document(id).Collection("File").Document(path);
             Dictionary<string, object> data1 = new Dictionary<string, object>()
     {
         {"Path", path },

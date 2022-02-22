@@ -14,7 +14,7 @@ using Google.Cloud.Firestore; // 파이어베이스 연동
 
 
 namespace spt_0._1.Forms
-{
+{    
     public partial class FormCheck : Form
     {
         private Form messageCheck;
@@ -104,6 +104,62 @@ namespace spt_0._1.Forms
             
         }
         */
+
+
+        async void selectTable()
+        {
+            
+            file_path = textBox1.Text;
+            string id = Login.ID;
+            
+            Query qref = db.Collection("Join").Document(id).Collection("File").WhereEqualTo("Path", file_path);
+            QuerySnapshot snap = await qref.GetSnapshotAsync();
+
+            foreach (DocumentSnapshot docsnap in snap)
+            {
+                FirebaseProperty fp = docsnap.ConvertTo<FirebaseProperty>();
+                if (docsnap.Exists)
+                {
+                    richTextBox1.Text = fp.Password;
+                    sel_pwd = fp.Password;
+                }
+            }
+            if (sel_pwd == "0")
+            {
+                richTextBox1.Text = "It's not encrypted.";
+            }
+
+            else
+            {
+                var WordApp = new Word.Application();
+                WordApp.Visible = true;
+                WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
+
+                messageCheck = new Forms.messageCheck();
+                messageCheck.ShowDialog();
+            }
+
+
+
+        }
+
+        /*
+        async Task<bool> FindFile(string id, string pass)
+        {
+            Query qref = db.Collection("Join").WhereEqualTo("Id", id).WhereEqualTo("Pass", pass);
+            QuerySnapshot snap = await qref.GetSnapshotAsync();
+
+            foreach (DocumentSnapshot docsnap in snap)
+            {
+                if (docsnap.Exists)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        */
+
         private void openButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show(Login.ID);
@@ -121,22 +177,10 @@ namespace spt_0._1.Forms
 
         private void iconButton2_Click_1(object sender, EventArgs e)
         {
-            //selectTable();
+            selectTable();
 
-            if (sel_pwd == "0")
-            {
-                richTextBox1.Text = "It's not encrypted.";
-            }
-
-            else
-            {
-                var WordApp = new Word.Application();
-                WordApp.Visible = true;
-                WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
-
-                messageCheck = new Forms.messageCheck();
-                messageCheck.ShowDialog();
-            }
+            
         }
     }
+
 }
