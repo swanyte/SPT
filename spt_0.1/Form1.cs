@@ -43,10 +43,7 @@ namespace spt_0._1
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(252, 133, 174);
-            public static Color color2 = Color.FromArgb(252, 133, 174);
-            public static Color color3 = Color.FromArgb(252, 133, 174);
-            public static Color color4 = Color.FromArgb(252, 133, 174);
+            public static Color color = Color.FromArgb(252, 133, 174);
         }
 
         //Methods
@@ -141,26 +138,32 @@ namespace spt_0._1
 
         private void ManualButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color);
             OpenChildForm(new Forms.FormTabManual());
         }
 
         private void EncrtpyButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender, RGBColors.color);
             OpenChildForm(new Forms.FormEncrypt());
         }
 
         private void CheckButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender, RGBColors.color);
             OpenChildForm(new Forms.FormCheck());
         }
 
         private void SetButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
+            ActivateButton(sender, RGBColors.color);
             OpenChildForm(new Forms.FormSetting());
+        }
+
+        private void changeButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color);
+            OpenChildForm(new Forms.FormChange());
         }
 
         private void MainLogo_Click(object sender, EventArgs e)
@@ -236,6 +239,7 @@ namespace spt_0._1
             ReleaseCapture();
             SendMessage(this.Handle, SYSTEMCOMMAND, SC_DRAGMOVE, 0);
         }
+
 
     }
 }
