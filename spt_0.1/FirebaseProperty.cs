@@ -13,6 +13,13 @@ namespace spt_0._1
         [FirestoreProperty]
         //필드 이름
         public string Password { get; set; }
+        [FirestoreProperty]
+        public string Folder { get; set; }
+        [FirestoreProperty]
+        public string Id { get; set; }
+        [FirestoreProperty]
+        public string Platform { get; set; }
+
 
     }
 }

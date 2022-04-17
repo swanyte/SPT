@@ -160,11 +160,6 @@ namespace spt_0._1
             OpenChildForm(new Forms.FormSetting());
         }
 
-        private void changeButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color);
-            OpenChildForm(new Forms.FormChange());
-        }
 
         private void MainLogo_Click(object sender, EventArgs e)
         {

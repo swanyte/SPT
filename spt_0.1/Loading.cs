@@ -58,12 +58,12 @@ namespace spt_0._1
                 {
                     ProgressBar.Value += 1;
                 }
-
                 ProgressBar.Text = ProgressBar.Value.ToString() + "%";
-            }
-            
 
-            
+            }
+
+
+
         }
 
         private void ProgressBar_Click(object sender, EventArgs e)

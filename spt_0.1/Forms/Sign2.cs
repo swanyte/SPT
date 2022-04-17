@@ -53,7 +53,7 @@ namespace spt_0._1.Forms
     {
         {"Id", id },
         {"Password", pw },
-        {"Platorm", plat },
+        {"Platform", plat },
         {"Folder", fold },
     };
             DOC.SetAsync(data1);

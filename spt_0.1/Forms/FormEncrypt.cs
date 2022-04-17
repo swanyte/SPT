@@ -11,6 +11,8 @@ using MySql.Data.MySqlClient;
 using Word = Microsoft.Office.Interop.Word;
 using Office = Microsoft.Office.Core;
 using Google.Cloud.Firestore; // 파이어베이스 연동
+using System.Diagnostics;
+
 
 
 namespace spt_0._1.Forms
@@ -96,6 +98,10 @@ namespace spt_0._1.Forms
                 wordApp.Quit();
 
                 AddFile(file_path, qpwd);
+
+                //string command = "/C cacls " + file_path + " /P everyone:n";
+                //MessageBox.Show(command);
+                //Process.Start("cmd.exe", command);
             }
             catch (Exception exc)
             {

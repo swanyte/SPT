@@ -10,8 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Word = Microsoft.Office.Interop.Word;
 using Google.Cloud.Firestore; // 파이어베이스 연동
-
-
+using Microsoft.Office.Interop.Word;
 
 namespace spt_0._1.Forms
 {    
@@ -134,9 +133,23 @@ namespace spt_0._1.Forms
                 var WordApp = new Word.Application();
                 WordApp.Visible = true;
                 WordApp.Documents.Open(file_path, ReadOnly: false, PasswordDocument: sel_pwd);
+                Word.Document doc = WordApp.ActiveDocument;
+
+                Microsoft.Office.Interop.Word.Application objWord;
+                objWord = (Microsoft.Office.Interop.Word.Application)System.Runtime.InteropServices.Marshal.GetActiveObject("Word.Application");
+                for (int i = 0; i < objWord.Windows.Count; i++)
+                {
+                    object a = i + 1;
+                    Window objWin = objWord.Windows.get_Item(ref a);
+                    MessageBox.Show(objWin.Caption + objWord.Windows.Count);
+                }
 
                 messageCheck = new Forms.messageCheck();
                 messageCheck.ShowDialog();
+
+
+                
+
             }
 
 
