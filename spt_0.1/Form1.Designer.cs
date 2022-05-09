@@ -29,74 +29,103 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.LeftMenu = new System.Windows.Forms.Panel();
-            this.LogoBox = new System.Windows.Forms.Panel();
-            this.TextBar = new System.Windows.Forms.Panel();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.welcome = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bannerAds1 = new AdsJumboWinForm.BannerAds();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.TextBar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
-            this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.ExitButton = new FontAwesome.Sharp.IconButton();
+            this.LogoBox = new System.Windows.Forms.Panel();
+            this.MainLogo = new System.Windows.Forms.PictureBox();
+            this.LeftMenu = new System.Windows.Forms.Panel();
+            this.LogButton = new FontAwesome.Sharp.IconButton();
             this.SetButton = new FontAwesome.Sharp.IconButton();
             this.CheckButton = new FontAwesome.Sharp.IconButton();
             this.EncrtpyButton = new FontAwesome.Sharp.IconButton();
             this.ManualButton = new FontAwesome.Sharp.IconButton();
-            this.MainLogo = new System.Windows.Forms.PictureBox();
-            this.LeftMenu.SuspendLayout();
-            this.LogoBox.SuspendLayout();
-            this.TextBar.SuspendLayout();
             this.panelDesktop.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.TextBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
+            this.LogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).BeginInit();
+            this.LeftMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // LeftMenu
+            // panelDesktop
             // 
-            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(112)))), ((int)(((byte)(114)))));
-            this.LeftMenu.Controls.Add(this.SetButton);
-            this.LeftMenu.Controls.Add(this.CheckButton);
-            this.LeftMenu.Controls.Add(this.EncrtpyButton);
-            this.LeftMenu.Controls.Add(this.ManualButton);
-            this.LeftMenu.Controls.Add(this.LogoBox);
-            this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftMenu.Location = new System.Drawing.Point(0, 0);
-            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.LeftMenu.Name = "LeftMenu";
-            this.LeftMenu.Size = new System.Drawing.Size(176, 441);
-            this.LeftMenu.TabIndex = 0;
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.panelDesktop.Controls.Add(this.label1);
+            this.panelDesktop.Controls.Add(this.welcome);
+            this.panelDesktop.Controls.Add(this.panel1);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDesktop.Location = new System.Drawing.Point(176, 105);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(561, 375);
+            this.panelDesktop.TabIndex = 3;
             // 
-            // LogoBox
+            // label1
             // 
-            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.LogoBox.Controls.Add(this.MainLogo);
-            this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LogoBox.Location = new System.Drawing.Point(0, 0);
-            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
-            this.LogoBox.Name = "LogoBox";
-            this.LogoBox.Size = new System.Drawing.Size(176, 105);
-            this.LogoBox.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(99)))), ((int)(((byte)(182)))));
+            this.label1.Location = new System.Drawing.Point(45, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(401, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "We are SIS4 working on the PBL project.";
             // 
-            // TextBar
+            // welcome
             // 
-            this.TextBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.TextBar.Controls.Add(this.pictureBox1);
-            this.TextBar.Controls.Add(this.lblTitleChildForm);
-            this.TextBar.Controls.Add(this.IconCurrentChildForm);
-            this.TextBar.Controls.Add(this.MinimizeButton);
-            this.TextBar.Controls.Add(this.MaximizeButton);
-            this.TextBar.Controls.Add(this.ExitButton);
-            this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TextBar.Location = new System.Drawing.Point(176, 0);
-            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBar.Name = "TextBar";
-            this.TextBar.Size = new System.Drawing.Size(628, 96);
-            this.TextBar.TabIndex = 1;
-            this.TextBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseDown);
+            this.welcome.AutoSize = true;
+            this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.welcome.Location = new System.Drawing.Point(38, 33);
+            this.welcome.Name = "welcome";
+            this.welcome.Size = new System.Drawing.Size(284, 37);
+            this.welcome.TabIndex = 0;
+            this.welcome.Text = "Welcome to SPT!!!";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.panel1.Controls.Add(this.bannerAds1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 310);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(561, 65);
+            this.panel1.TabIndex = 2;
+            // 
+            // bannerAds1
+            // 
+            this.bannerAds1.ApplicationId = null;
+            this.bannerAds1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(168)))), ((int)(((byte)(211)))));
+            this.bannerAds1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bannerAds1.HeightAd = 0;
+            this.bannerAds1.Location = new System.Drawing.Point(0, 0);
+            this.bannerAds1.Margin = new System.Windows.Forms.Padding(0);
+            this.bannerAds1.Name = "bannerAds1";
+            this.bannerAds1.Padding = new System.Windows.Forms.Padding(2);
+            this.bannerAds1.Size = new System.Drawing.Size(561, 65);
+            this.bannerAds1.TabIndex = 1;
+            this.bannerAds1.WidthAd = 0;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(176, 96);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(561, 9);
+            this.panelShadow.TabIndex = 2;
             // 
             // lblTitleChildForm
             // 
@@ -109,52 +138,37 @@
             this.lblTitleChildForm.TabIndex = 4;
             this.lblTitleChildForm.Text = "Home";
             // 
-            // panelShadow
+            // TextBar
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(176, 96);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(628, 9);
-            this.panelShadow.TabIndex = 2;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Controls.Add(this.welcome);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelDesktop.Location = new System.Drawing.Point(176, 105);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(628, 336);
-            this.panelDesktop.TabIndex = 3;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // welcome
-            // 
-            this.welcome.AutoSize = true;
-            this.welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
-            this.welcome.Location = new System.Drawing.Point(38, 33);
-            this.welcome.Name = "welcome";
-            this.welcome.Size = new System.Drawing.Size(284, 37);
-            this.welcome.TabIndex = 0;
-            this.welcome.Text = "Welcome to SPT!!!";
+            this.TextBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.TextBar.Controls.Add(this.pictureBox1);
+            this.TextBar.Controls.Add(this.lblTitleChildForm);
+            this.TextBar.Controls.Add(this.IconCurrentChildForm);
+            this.TextBar.Controls.Add(this.MinimizeButton);
+            this.TextBar.Controls.Add(this.ExitButton);
+            this.TextBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TextBar.Location = new System.Drawing.Point(176, 0);
+            this.TextBar.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBar.Name = "TextBar";
+            this.TextBar.Size = new System.Drawing.Size(561, 96);
+            this.TextBar.TabIndex = 1;
+            this.TextBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseMove);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::spt_0._1.Properties.Resources.symbol1;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
+            this.pictureBox1.Image = global::spt_0._1.Properties.Resources.pbl;
+            this.pictureBox1.Location = new System.Drawing.Point(507, 48);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // IconCurrentChildForm
             // 
             this.IconCurrentChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(34)))), ((int)(((byte)(53)))));
+            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
             this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.IconCurrentChildForm.IconColor = System.Drawing.Color.White;
             this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -162,6 +176,7 @@
             this.IconCurrentChildForm.Location = new System.Drawing.Point(3, 57);
             this.IconCurrentChildForm.Name = "IconCurrentChildForm";
             this.IconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
+            this.IconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.IconCurrentChildForm.TabIndex = 3;
             this.IconCurrentChildForm.TabStop = false;
             // 
@@ -175,31 +190,13 @@
             this.MinimizeButton.IconColor = System.Drawing.Color.White;
             this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MinimizeButton.IconSize = 20;
-            this.MinimizeButton.Location = new System.Drawing.Point(572, 5);
+            this.MinimizeButton.Location = new System.Drawing.Point(523, 5);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
             this.MinimizeButton.TabIndex = 2;
             this.MinimizeButton.UseVisualStyleBackColor = true;
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
-            // 
-            // MaximizeButton
-            // 
-            this.MaximizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MaximizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MaximizeButton.FlatAppearance.BorderSize = 0;
-            this.MaximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MaximizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.MaximizeButton.IconColor = System.Drawing.Color.White;
-            this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MaximizeButton.IconSize = 20;
-            this.MaximizeButton.Location = new System.Drawing.Point(590, 5);
-            this.MaximizeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeButton.Name = "MaximizeButton";
-            this.MaximizeButton.Size = new System.Drawing.Size(16, 16);
-            this.MaximizeButton.TabIndex = 1;
-            this.MaximizeButton.UseVisualStyleBackColor = true;
-            this.MaximizeButton.Click += new System.EventHandler(this.MaximizeButton_Click);
             // 
             // ExitButton
             // 
@@ -211,13 +208,77 @@
             this.ExitButton.IconColor = System.Drawing.Color.White;
             this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(608, 5);
+            this.ExitButton.Location = new System.Drawing.Point(541, 5);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(16, 16);
             this.ExitButton.TabIndex = 0;
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // LogoBox
+            // 
+            this.LogoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.LogoBox.Controls.Add(this.MainLogo);
+            this.LogoBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoBox.Location = new System.Drawing.Point(0, 0);
+            this.LogoBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoBox.Name = "LogoBox";
+            this.LogoBox.Size = new System.Drawing.Size(176, 105);
+            this.LogoBox.TabIndex = 1;
+            // 
+            // MainLogo
+            // 
+            this.MainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.MainLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainLogo.Image = global::spt_0._1.Properties.Resources.SPT_Logo1;
+            this.MainLogo.Location = new System.Drawing.Point(0, 0);
+            this.MainLogo.Name = "MainLogo";
+            this.MainLogo.Size = new System.Drawing.Size(176, 105);
+            this.MainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MainLogo.TabIndex = 0;
+            this.MainLogo.TabStop = false;
+            this.MainLogo.Click += new System.EventHandler(this.MainLogo_Click);
+            // 
+            // LeftMenu
+            // 
+            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
+            this.LeftMenu.Controls.Add(this.LogButton);
+            this.LeftMenu.Controls.Add(this.SetButton);
+            this.LeftMenu.Controls.Add(this.CheckButton);
+            this.LeftMenu.Controls.Add(this.EncrtpyButton);
+            this.LeftMenu.Controls.Add(this.ManualButton);
+            this.LeftMenu.Controls.Add(this.LogoBox);
+            this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftMenu.Location = new System.Drawing.Point(0, 0);
+            this.LeftMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.LeftMenu.Name = "LeftMenu";
+            this.LeftMenu.Size = new System.Drawing.Size(176, 480);
+            this.LeftMenu.TabIndex = 0;
+            // 
+            // LogButton
+            // 
+            this.LogButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.LogButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogButton.FlatAppearance.BorderSize = 0;
+            this.LogButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.LogButton.ForeColor = System.Drawing.Color.White;
+            this.LogButton.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            this.LogButton.IconColor = System.Drawing.Color.White;
+            this.LogButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.LogButton.IconSize = 36;
+            this.LogButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogButton.Location = new System.Drawing.Point(0, 285);
+            this.LogButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LogButton.Name = "LogButton";
+            this.LogButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.LogButton.Size = new System.Drawing.Size(176, 60);
+            this.LogButton.TabIndex = 5;
+            this.LogButton.Text = "Log";
+            this.LogButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.LogButton.UseVisualStyleBackColor = true;
+            this.LogButton.Click += new System.EventHandler(this.LogButton_Click);
             // 
             // SetButton
             // 
@@ -232,7 +293,7 @@
             this.SetButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SetButton.IconSize = 36;
             this.SetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SetButton.Location = new System.Drawing.Point(0, 381);
+            this.SetButton.Location = new System.Drawing.Point(0, 420);
             this.SetButton.Margin = new System.Windows.Forms.Padding(2);
             this.SetButton.Name = "SetButton";
             this.SetButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -315,64 +376,58 @@
             this.ManualButton.UseVisualStyleBackColor = true;
             this.ManualButton.Click += new System.EventHandler(this.ManualButton_Click);
             // 
-            // MainLogo
-            // 
-            this.MainLogo.Image = global::spt_0._1.Properties.Resources.main_logo;
-            this.MainLogo.Location = new System.Drawing.Point(0, 0);
-            this.MainLogo.Name = "MainLogo";
-            this.MainLogo.Size = new System.Drawing.Size(176, 105);
-            this.MainLogo.TabIndex = 0;
-            this.MainLogo.TabStop = false;
-            this.MainLogo.Click += new System.EventHandler(this.MainLogo_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(804, 441);
+            this.ClientSize = new System.Drawing.Size(737, 480);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.TextBar);
             this.Controls.Add(this.LeftMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.LeftMenu.ResumeLayout(false);
-            this.LogoBox.ResumeLayout(false);
-            this.TextBar.ResumeLayout(false);
-            this.TextBar.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.TextBar.ResumeLayout(false);
+            this.TextBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
+            this.LogoBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainLogo)).EndInit();
+            this.LeftMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel LeftMenu;
-        private FontAwesome.Sharp.IconButton ManualButton;
-        private System.Windows.Forms.Panel LogoBox;
-        private FontAwesome.Sharp.IconButton SetButton;
-        private FontAwesome.Sharp.IconButton CheckButton;
-        private FontAwesome.Sharp.IconButton EncrtpyButton;
-        private System.Windows.Forms.Panel TextBar;
-        private FontAwesome.Sharp.IconButton MinimizeButton;
-        private FontAwesome.Sharp.IconButton MaximizeButton;
-        private FontAwesome.Sharp.IconButton ExitButton;
-		private FontAwesome.Sharp.IconPictureBox IconCurrentChildForm;
-		private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Label welcome;
-        private System.Windows.Forms.PictureBox MainLogo;
+        private System.Windows.Forms.Panel panelShadow;
+        private FontAwesome.Sharp.IconButton ExitButton;
+        private FontAwesome.Sharp.IconButton MinimizeButton;
+        private FontAwesome.Sharp.IconPictureBox IconCurrentChildForm;
+        private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel TextBar;
+        private AdsJumboWinForm.BannerAds bannerAds1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel LogoBox;
+        private System.Windows.Forms.PictureBox MainLogo;
+        private FontAwesome.Sharp.IconButton ManualButton;
+        private FontAwesome.Sharp.IconButton EncrtpyButton;
+        private FontAwesome.Sharp.IconButton CheckButton;
+        private FontAwesome.Sharp.IconButton SetButton;
+        private System.Windows.Forms.Panel LeftMenu;
+        private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton LogButton;
     }
 }
 

@@ -29,12 +29,15 @@ namespace spt_0._1.Forms
             menws = new List<Label>();
             menws.Add(btnEncryption);
             menws.Add(btnCheck);
+            menws.Add(btnLog);
             menws.Add(btnSetting);
 
             menw_colors = new List<Color>();
-            menw_colors.Add(Color.FromArgb(157, 34, 53));
-            menw_colors.Add(Color.FromArgb(0, 26, 114));
-            menw_colors.Add(Color.FromArgb(255, 184, 28));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
+            menw_colors.Add(Color.FromArgb(252, 133, 174));
+
 
             //시작 TabPage 설정
             tabMain.SelectedIndex = 0;
@@ -61,9 +64,15 @@ namespace spt_0._1.Forms
             setMenuChange(1);
         }
 
-        private void btnSetting_Click(object sender, EventArgs e)
+
+        private void btnLog_Click(object sender, EventArgs e)
         {
             setMenuChange(2);
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            setMenuChange(3);
         }
     }
 
