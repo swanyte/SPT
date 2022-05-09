@@ -44,11 +44,11 @@
             this.LogoBox = new System.Windows.Forms.Panel();
             this.MainLogo = new System.Windows.Forms.PictureBox();
             this.LeftMenu = new System.Windows.Forms.Panel();
+            this.LogButton = new FontAwesome.Sharp.IconButton();
             this.SetButton = new FontAwesome.Sharp.IconButton();
             this.CheckButton = new FontAwesome.Sharp.IconButton();
             this.EncrtpyButton = new FontAwesome.Sharp.IconButton();
             this.ManualButton = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelDesktop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.TextBar.SuspendLayout();
@@ -69,7 +69,7 @@
             this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.Location = new System.Drawing.Point(176, 105);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(628, 375);
+            this.panelDesktop.Size = new System.Drawing.Size(561, 375);
             this.panelDesktop.TabIndex = 3;
             // 
             // label1
@@ -101,7 +101,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 65);
+            this.panel1.Size = new System.Drawing.Size(561, 65);
             this.panel1.TabIndex = 2;
             // 
             // bannerAds1
@@ -114,7 +114,7 @@
             this.bannerAds1.Margin = new System.Windows.Forms.Padding(0);
             this.bannerAds1.Name = "bannerAds1";
             this.bannerAds1.Padding = new System.Windows.Forms.Padding(2);
-            this.bannerAds1.Size = new System.Drawing.Size(628, 65);
+            this.bannerAds1.Size = new System.Drawing.Size(561, 65);
             this.bannerAds1.TabIndex = 1;
             this.bannerAds1.WidthAd = 0;
             // 
@@ -124,7 +124,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(176, 96);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(628, 9);
+            this.panelShadow.Size = new System.Drawing.Size(561, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // lblTitleChildForm
@@ -150,7 +150,7 @@
             this.TextBar.Location = new System.Drawing.Point(176, 0);
             this.TextBar.Margin = new System.Windows.Forms.Padding(2);
             this.TextBar.Name = "TextBar";
-            this.TextBar.Size = new System.Drawing.Size(628, 96);
+            this.TextBar.Size = new System.Drawing.Size(561, 96);
             this.TextBar.TabIndex = 1;
             this.TextBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TextBar_MouseMove);
             // 
@@ -158,7 +158,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::spt_0._1.Properties.Resources.pbl;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(507, 48);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -190,7 +190,7 @@
             this.MinimizeButton.IconColor = System.Drawing.Color.White;
             this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MinimizeButton.IconSize = 20;
-            this.MinimizeButton.Location = new System.Drawing.Point(590, 5);
+            this.MinimizeButton.Location = new System.Drawing.Point(523, 5);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
@@ -208,7 +208,7 @@
             this.ExitButton.IconColor = System.Drawing.Color.White;
             this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(608, 5);
+            this.ExitButton.Location = new System.Drawing.Point(541, 5);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(16, 16);
@@ -243,7 +243,7 @@
             // LeftMenu
             // 
             this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.LeftMenu.Controls.Add(this.iconButton1);
+            this.LeftMenu.Controls.Add(this.LogButton);
             this.LeftMenu.Controls.Add(this.SetButton);
             this.LeftMenu.Controls.Add(this.CheckButton);
             this.LeftMenu.Controls.Add(this.EncrtpyButton);
@@ -255,6 +255,30 @@
             this.LeftMenu.Name = "LeftMenu";
             this.LeftMenu.Size = new System.Drawing.Size(176, 480);
             this.LeftMenu.TabIndex = 0;
+            // 
+            // LogButton
+            // 
+            this.LogButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.LogButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogButton.FlatAppearance.BorderSize = 0;
+            this.LogButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.LogButton.ForeColor = System.Drawing.Color.White;
+            this.LogButton.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            this.LogButton.IconColor = System.Drawing.Color.White;
+            this.LogButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.LogButton.IconSize = 36;
+            this.LogButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogButton.Location = new System.Drawing.Point(0, 285);
+            this.LogButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LogButton.Name = "LogButton";
+            this.LogButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.LogButton.Size = new System.Drawing.Size(176, 60);
+            this.LogButton.TabIndex = 5;
+            this.LogButton.Text = "Log";
+            this.LogButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.LogButton.UseVisualStyleBackColor = true;
+            this.LogButton.Click += new System.EventHandler(this.LogButton_Click);
             // 
             // SetButton
             // 
@@ -352,35 +376,12 @@
             this.ManualButton.UseVisualStyleBackColor = true;
             this.ManualButton.Click += new System.EventHandler(this.ManualButton_Click);
             // 
-            // iconButton1
-            // 
-            this.iconButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 36;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 285);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton1.Size = new System.Drawing.Size(176, 60);
-            this.iconButton1.TabIndex = 5;
-            this.iconButton1.Text = "Practice";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(804, 480);
+            this.ClientSize = new System.Drawing.Size(737, 480);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.TextBar);
@@ -426,7 +427,7 @@
         private FontAwesome.Sharp.IconButton SetButton;
         private System.Windows.Forms.Panel LeftMenu;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton LogButton;
     }
 }
 

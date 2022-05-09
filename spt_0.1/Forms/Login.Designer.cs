@@ -50,7 +50,7 @@ namespace spt_0._1.Forms
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.label3);
@@ -64,7 +64,7 @@ namespace spt_0._1.Forms
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.openButton);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(231, 50);
+            this.panel1.Location = new System.Drawing.Point(194, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(341, 378);
             this.panel1.TabIndex = 0;
@@ -232,7 +232,7 @@ namespace spt_0._1.Forms
             this.ExitButton.IconColor = System.Drawing.Color.White;
             this.ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ExitButton.IconSize = 20;
-            this.ExitButton.Location = new System.Drawing.Point(787, 2);
+            this.ExitButton.Location = new System.Drawing.Point(713, 2);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(16, 16);
@@ -245,7 +245,7 @@ namespace spt_0._1.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(109)))));
-            this.ClientSize = new System.Drawing.Size(804, 480);
+            this.ClientSize = new System.Drawing.Size(730, 480);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

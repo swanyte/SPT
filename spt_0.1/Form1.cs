@@ -235,6 +235,10 @@ namespace spt_0._1
             SendMessage(this.Handle, SYSTEMCOMMAND, SC_DRAGMOVE, 0);
         }
 
-
+        private void LogButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color);
+            OpenChildForm(new Forms.FormLog());
+        }
     }
 }

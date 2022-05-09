@@ -185,6 +185,12 @@
     <Compile Include="Forms\FormEncrypt.Designer.cs">
       <DependentUpon>FormEncrypt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLog.Designer.cs">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     <Compile Include="Forms\RJControls\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\RJControls\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\Sign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +262,9 @@
     <EmbeddedResource Include="Forms\FormEncrypt.resx">
       <DependentUpon>FormEncrypt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLog.resx">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageExit.resx">
       <DependentUpon>MessageExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RJControls\RJComboBox.resx">
+      <DependentUpon>RJComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Sgin.resx">
       <DependentUpon>Sign.cs</DependentUpon>

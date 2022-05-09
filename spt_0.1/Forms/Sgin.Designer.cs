@@ -41,6 +41,7 @@ namespace spt_0._1.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.NextSign2Button = new spt_0._1.Forms.RJButton();
             this.BackButton = new FontAwesome.Sharp.IconButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comID
@@ -187,12 +188,24 @@ namespace spt_0._1.Forms
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(177)))), ((int)(((byte)(218)))));
+            this.label5.Location = new System.Drawing.Point(128, 177);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 26);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "longer than 8 characters\r\nusing at least 3 numbers";
+            // 
             // Sign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(341, 378);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.NextSign2Button);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label4);
@@ -229,5 +242,6 @@ namespace spt_0._1.Forms
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton BackButton;
         private RJButton NextSign2Button;
+        private System.Windows.Forms.Label label5;
     }
 }
